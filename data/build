@@ -1,0 +1,7 @@
+cd "$(dirname "$0")"
+source ../env
+
+$PYTHON generate-profiles.py
+$PYTHON generate-profile-pics.py
+$PYTHON generate-posts.py
+$PYTHON generate-comments.py

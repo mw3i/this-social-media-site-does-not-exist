@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<style type="text/css">
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+</style>
+
+<body data-theme="dark">
+    <!-- Header / Navbar -->
+    <header>
+    <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong>This Social Media Site Doesn't Exist</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item mx-1 " href="/">
+                    Feed
+                </a>
+                <a class="navbar-item mx-1 " href="/profiles/">
+                    Profiles
+                </a>
+                <a class="navbar-item mx-1 " href="/about/">
+                    About
+                </a>
+                <a class="navbar-item mx-1 is-active" href="/experiments/">
+                   Experiments 
+                </a>
+            </div>
+        </div>
+    </nav>
+        <style>
+        /* Custom styles for the active tab */
+        .navbar-item {
+            border-radius: 12px !important;
+        }
+
+        .navbar-item.is-active {
+            background-color: #00d1b2;
+            /* Bulma's primary color */
+            color: white;
+            border-radius: 12px;
+            /* Rounded background */
+/*            padding-left: 10px;*/
+/*            padding-right: 10px;*/
+        }
+
+        .navbar-item.is-active:hover {
+            background-color: #00c4a7;
+            /* Slightly different shade on hover */
+        }
+        </style>
+    </header>
+    <!-- Main Content -->
+    <main class="section content" style='padding-top: 80px;'>
+            <section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-three-quarters">
+                <div class="columns is-multiline">
+<p><!-- experiment Card -->
+<div class="column is-full has-background-grey-darker my-5" style='border-radius: 15px;'>
+<a href="/experiments/bad-mood/" class="card has-background-grey-darker">
+<div class="card-content">
+<p class="title has-text-white">Comments With Bad Mood</p>
+</div>
+</a>
+</div></p>
+<p><!-- experiment Card -->
+<div class="column is-full has-background-grey-darker my-5" style='border-radius: 15px;'>
+<a href="/experiments/good-mood/" class="card has-background-grey-darker">
+<div class="card-content">
+<p class="title has-text-white">Comments With Good Mood</p>
+</div>
+</a>
+</div></p>
+<p><!-- experiment Card -->
+<div class="column is-full has-background-grey-darker my-5" style='border-radius: 15px;'>
+<a href="/experiments/sad-pirates/" class="card has-background-grey-darker">
+<div class="card-content">
+<p class="title has-text-white">Commenters are Sad Pirates</p>
+</div>
+</a>
+</div></p>
+<p></div>
+</div>
+</div>
+</div></p>
+</section>
+
+    </main>
+    <!-- Footer (Optional) -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                made by <strong><a href="https://mw3i.github.io/">mw</a></strong>.
+            </p>
+        </div>
+    </footer>
+    <!-- Burger Menu Script for mobile -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

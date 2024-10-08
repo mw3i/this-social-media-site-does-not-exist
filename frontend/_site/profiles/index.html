@@ -1,0 +1,2812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiles</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<style type="text/css">
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+</style>
+
+<body data-theme="dark">
+    <!-- Header / Navbar -->
+    <header>
+    <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong>This Social Media Site Doesn't Exist</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item mx-1 " href="/">
+                    Feed
+                </a>
+                <a class="navbar-item mx-1 is-active" href="/profiles/">
+                    Profiles
+                </a>
+                <a class="navbar-item mx-1 " href="/about/">
+                    About
+                </a>
+                <a class="navbar-item mx-1 " href="/experiments/">
+                   Experiments 
+                </a>
+            </div>
+        </div>
+    </nav>
+        <style>
+        /* Custom styles for the active tab */
+        .navbar-item {
+            border-radius: 12px !important;
+        }
+
+        .navbar-item.is-active {
+            background-color: #00d1b2;
+            /* Bulma's primary color */
+            color: white;
+            border-radius: 12px;
+            /* Rounded background */
+/*            padding-left: 10px;*/
+/*            padding-right: 10px;*/
+        }
+
+        .navbar-item.is-active:hover {
+            background-color: #00c4a7;
+            /* Slightly different shade on hover */
+        }
+        </style>
+    </header>
+    <!-- Main Content -->
+    <main class="section content" style='padding-top: 80px;'>
+            <section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-three-quarters">
+                <div class="columns is-multiline">
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Patel</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/0.png" alt="Aarav Patel's profile picture">
+<!-- <img src="" alt="Aarav Patel's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.91</p>
+<p><strong>Interests:</strong> [&quot;education&quot;, &quot;gardening&quot;, &quot;traveling&quot;]</p>
+<!-- <p><strong>Mood:</strong> curious</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élise Dubois</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/1.png" alt="Élise Dubois's profile picture">
+<!-- <img src="" alt="Élise Dubois's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0.91</p>
+<p><strong>Interests:</strong> [&quot;writing&quot;, &quot;science&quot;]</p>
+<!-- <p><strong>Mood:</strong> excited</p> -->
+<p><strong>Personality Type:</strong> snob</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Haruto Yamamoto</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/2.png" alt="Haruto Yamamoto's profile picture">
+<!-- <img src="" alt="Haruto Yamamoto's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.7</p>
+<p><strong>Interests:</strong> [&quot;art&quot;, &quot;science&quot;, &quot;gardening&quot;, &quot;history&quot;, &quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> bully</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Haruka Takahashi</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/3.png" alt="Haruka Takahashi's profile picture">
+<!-- <img src="" alt="Haruka Takahashi's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.89</p>
+<p><strong>Interests:</strong> [&quot;fitness&quot;, &quot;reading&quot;, &quot;education&quot;]</p>
+<!-- <p><strong>Mood:</strong> grateful</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élodie Durand</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/4.png" alt="Élodie Durand's profile picture">
+<!-- <img src="" alt="Élodie Durand's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0.71</p>
+<p><strong>Interests:</strong> [&quot;reading&quot;, &quot;hiking&quot;, &quot;gaming&quot;, &quot;education&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> angry</p> -->
+<p><strong>Personality Type:</strong> introvert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Sharma</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/5.png" alt="Aarav Sharma's profile picture">
+<!-- <img src="" alt="Aarav Sharma's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.53</p>
+<p><strong>Interests:</strong> [&quot;science&quot;, &quot;movies&quot;, &quot;music&quot;]</p>
+<!-- <p><strong>Mood:</strong> content</p> -->
+<p><strong>Personality Type:</strong> friendly person</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Haruto Tanaka</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/6.png" alt="Haruto Tanaka's profile picture">
+<!-- <img src="" alt="Haruto Tanaka's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.72</p>
+<p><strong>Interests:</strong> [&quot;movies&quot;, &quot;volunteering&quot;, &quot;art&quot;]</p>
+<!-- <p><strong>Mood:</strong> anxious</p> -->
+<p><strong>Personality Type:</strong> intellectual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Priya Kapoor</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/7.png" alt="Priya Kapoor's profile picture">
+<!-- <img src="" alt="Priya Kapoor's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.52</p>
+<p><strong>Interests:</strong> [&quot;hiking&quot;, &quot;fashion&quot;, &quot;writing&quot;, &quot;fitness&quot;, &quot;technology&quot;]</p>
+<!-- <p><strong>Mood:</strong> sad</p> -->
+<p><strong>Personality Type:</strong> introvert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Oliver Harrison</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/8.png" alt="Oliver Harrison's profile picture">
+<!-- <img src="" alt="Oliver Harrison's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.19</p>
+<p><strong>Interests:</strong> [&quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> bored</p> -->
+<p><strong>Personality Type:</strong> bully</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Oliver Bennett</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/9.png" alt="Oliver Bennett's profile picture">
+<!-- <img src="" alt="Oliver Bennett's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.48</p>
+<p><strong>Interests:</strong> [&quot;education&quot;, &quot;art&quot;, &quot;pets&quot;]</p>
+<!-- <p><strong>Mood:</strong> nostalgic</p> -->
+<p><strong>Personality Type:</strong> introvert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/10.png" alt="Emily Thompson's profile picture">
+<!-- <img src="" alt="Emily Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.32</p>
+<p><strong>Interests:</strong> [&quot;politics&quot;, &quot;sports&quot;, &quot;movies&quot;, &quot;reading&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> realist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Ming Wei</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/11.png" alt="Ming Wei's profile picture">
+<!-- <img src="" alt="Ming Wei's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.66</p>
+<p><strong>Interests:</strong> [&quot;fitness&quot;]</p>
+<!-- <p><strong>Mood:</strong> content</p> -->
+<p><strong>Personality Type:</strong> extrovert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lukas Fischer</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/12.png" alt="Lukas Fischer's profile picture">
+<!-- <img src="" alt="Lukas Fischer's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.33</p>
+<p><strong>Interests:</strong> [&quot;technology&quot;, &quot;movies&quot;, &quot;hiking&quot;, &quot;volunteering&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> confident</p> -->
+<p><strong>Personality Type:</strong> intellectual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Oliver Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/13.png" alt="Oliver Thompson's profile picture">
+<!-- <img src="" alt="Oliver Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.67</p>
+<p><strong>Interests:</strong> [&quot;fashion&quot;, &quot;music&quot;]</p>
+<!-- <p><strong>Mood:</strong> disappointed</p> -->
+<p><strong>Personality Type:</strong> introvert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Min Hao</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/14.png" alt="Min Hao's profile picture">
+<!-- <img src="" alt="Min Hao's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.08</p>
+<p><strong>Interests:</strong> [&quot;volunteering&quot;, &quot;gaming&quot;, &quot;movies&quot;]</p>
+<!-- <p><strong>Mood:</strong> surprised</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Haruto Takahashi</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/15.png" alt="Haruto Takahashi's profile picture">
+<!-- <img src="" alt="Haruto Takahashi's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.85</p>
+<p><strong>Interests:</strong> [&quot;photography&quot;, &quot;gardening&quot;, &quot;history&quot;, &quot;education&quot;, &quot;traveling&quot;]</p>
+<!-- <p><strong>Mood:</strong> curious</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Haruka Tanaka</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/16.png" alt="Haruka Tanaka's profile picture">
+<!-- <img src="" alt="Haruka Tanaka's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.96</p>
+<p><strong>Interests:</strong> [&quot;cooking&quot;, &quot;politics&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> dreamer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Alex Morgan</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/17.png" alt="Alex Morgan's profile picture">
+<!-- <img src="" alt="Alex Morgan's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.3</p>
+<p><strong>Interests:</strong> [&quot;hiking&quot;, &quot;gardening&quot;, &quot;gaming&quot;, &quot;fashion&quot;]</p>
+<!-- <p><strong>Mood:</strong> overwhelmed</p> -->
+<p><strong>Personality Type:</strong> snob</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élise Moreau</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/18.png" alt="Élise Moreau's profile picture">
+<!-- <img src="" alt="Élise Moreau's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0.6</p>
+<p><strong>Interests:</strong> [&quot;writing&quot;, &quot;history&quot;, &quot;cooking&quot;]</p>
+<!-- <p><strong>Mood:</strong> bored</p> -->
+<p><strong>Personality Type:</strong> friendly person</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Patel</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/19.png" alt="Aarav Patel's profile picture">
+<!-- <img src="" alt="Aarav Patel's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.68</p>
+<p><strong>Interests:</strong> [&quot;hiking&quot;, &quot;fitness&quot;]</p>
+<!-- <p><strong>Mood:</strong> calm</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Mehra</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/20.png" alt="Aarav Mehra's profile picture">
+<!-- <img src="" alt="Aarav Mehra's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.24</p>
+<p><strong>Interests:</strong> [&quot;education&quot;, &quot;politics&quot;, &quot;reading&quot;]</p>
+<!-- <p><strong>Mood:</strong> anxious</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lukas Wagner</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/21.png" alt="Lukas Wagner's profile picture">
+<!-- <img src="" alt="Lukas Wagner's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.96</p>
+<p><strong>Interests:</strong> [&quot;reading&quot;]</p>
+<!-- <p><strong>Mood:</strong> overwhelmed</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Mei Chen</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/22.png" alt="Mei Chen's profile picture">
+<!-- <img src="" alt="Mei Chen's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.77</p>
+<p><strong>Interests:</strong> [&quot;science&quot;, &quot;movies&quot;, &quot;politics&quot;, &quot;technology&quot;, &quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> jokester</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lukas Müller</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/23.png" alt="Lukas Müller's profile picture">
+<!-- <img src="" alt="Lukas Müller's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.12</p>
+<p><strong>Interests:</strong> [&quot;photography&quot;, &quot;fashion&quot;]</p>
+<!-- <p><strong>Mood:</strong> content</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Oliver Bennett</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/24.png" alt="Oliver Bennett's profile picture">
+<!-- <img src="" alt="Oliver Bennett's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.92</p>
+<p><strong>Interests:</strong> [&quot;music&quot;]</p>
+<!-- <p><strong>Mood:</strong> disappointed</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Oliver Bennett</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/25.png" alt="Oliver Bennett's profile picture">
+<!-- <img src="" alt="Oliver Bennett's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.2</p>
+<p><strong>Interests:</strong> [&quot;art&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> intellectual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lena Fischer</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/26.png" alt="Lena Fischer's profile picture">
+<!-- <img src="" alt="Lena Fischer's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.05</p>
+<p><strong>Interests:</strong> [&quot;fitness&quot;, &quot;cooking&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> adventurous</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Amit Chatterjee</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/27.png" alt="Amit Chatterjee's profile picture">
+<!-- <img src="" alt="Amit Chatterjee's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.92</p>
+<p><strong>Interests:</strong> [&quot;sports&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> friendly person</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élise Fournier</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/28.png" alt="Élise Fournier's profile picture">
+<!-- <img src="" alt="Élise Fournier's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0.86</p>
+<p><strong>Interests:</strong> [&quot;politics&quot;, &quot;cooking&quot;]</p>
+<!-- <p><strong>Mood:</strong> bored</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Wei Zhang</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/29.png" alt="Wei Zhang's profile picture">
+<!-- <img src="" alt="Wei Zhang's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.29</p>
+<p><strong>Interests:</strong> [&quot;movies&quot;, &quot;gaming&quot;]</p>
+<!-- <p><strong>Mood:</strong> confident</p> -->
+<p><strong>Personality Type:</strong> intellectual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Hailey Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/30.png" alt="Hailey Thompson's profile picture">
+<!-- <img src="" alt="Hailey Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.85</p>
+<p><strong>Interests:</strong> [&quot;writing&quot;, &quot;sports&quot;, &quot;reading&quot;, &quot;gardening&quot;]</p>
+<!-- <p><strong>Mood:</strong> relaxed</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Avery Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/31.png" alt="Avery Thompson's profile picture">
+<!-- <img src="" alt="Avery Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.01</p>
+<p><strong>Interests:</strong> [&quot;science&quot;, &quot;reading&quot;, &quot;cooking&quot;, &quot;pets&quot;]</p>
+<!-- <p><strong>Mood:</strong> grateful</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Jessica Miller</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/32.png" alt="Jessica Miller's profile picture">
+<!-- <img src="" alt="Jessica Miller's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.36</p>
+<p><strong>Interests:</strong> [&quot;science&quot;, &quot;art&quot;]</p>
+<!-- <p><strong>Mood:</strong> disappointed</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Luca Romano</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/33.png" alt="Luca Romano's profile picture">
+<!-- <img src="" alt="Luca Romano's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Italy</p>
+<p><strong>Political Ideology Leaning:</strong> 0.97</p>
+<p><strong>Interests:</strong> [&quot;hiking&quot;, &quot;education&quot;]</p>
+<!-- <p><strong>Mood:</strong> disappointed</p> -->
+<p><strong>Personality Type:</strong> motivational type</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Olivia Bennett</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/34.png" alt="Olivia Bennett's profile picture">
+<!-- <img src="" alt="Olivia Bennett's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.61</p>
+<p><strong>Interests:</strong> [&quot;hiking&quot;, &quot;cooking&quot;, &quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> angry</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Ethan Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/35.png" alt="Ethan Thompson's profile picture">
+<!-- <img src="" alt="Ethan Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.38</p>
+<p><strong>Interests:</strong> [&quot;art&quot;, &quot;movies&quot;, &quot;politics&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lucas Oliveira</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/36.png" alt="Lucas Oliveira's profile picture">
+<!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Brazil</p>
+<p><strong>Political Ideology Leaning:</strong> 0.48</p>
+<p><strong>Interests:</strong> [&quot;movies&quot;, &quot;traveling&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> confident</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Liu Wei</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/37.png" alt="Liu Wei's profile picture">
+<!-- <img src="" alt="Liu Wei's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.61</p>
+<p><strong>Interests:</strong> [&quot;reading&quot;, &quot;fitness&quot;, &quot;politics&quot;, &quot;music&quot;]</p>
+<!-- <p><strong>Mood:</strong> hopeful</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élodie Moreau</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/38.png" alt="Élodie Moreau's profile picture">
+<!-- <img src="" alt="Élodie Moreau's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0</p>
+<p><strong>Interests:</strong> [&quot;gaming&quot;, &quot;movies&quot;]</p>
+<!-- <p><strong>Mood:</strong> anxious</p> -->
+<p><strong>Personality Type:</strong> realist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Ananya Sharma</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/39.png" alt="Ananya Sharma's profile picture">
+<!-- <img src="" alt="Ananya Sharma's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.43</p>
+<p><strong>Interests:</strong> [&quot;technology&quot;]</p>
+<!-- <p><strong>Mood:</strong> confident</p> -->
+<p><strong>Personality Type:</strong> snob</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Jessica Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/40.png" alt="Jessica Thompson's profile picture">
+<!-- <img src="" alt="Jessica Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.35</p>
+<p><strong>Interests:</strong> [&quot;volunteering&quot;, &quot;photography&quot;, &quot;movies&quot;, &quot;technology&quot;]</p>
+<!-- <p><strong>Mood:</strong> disappointed</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Sharma</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/41.png" alt="Aarav Sharma's profile picture">
+<!-- <img src="" alt="Aarav Sharma's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.02</p>
+<p><strong>Interests:</strong> [&quot;cooking&quot;]</p>
+<!-- <p><strong>Mood:</strong> curious</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Clarke</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/42.png" alt="Emily Clarke's profile picture">
+<!-- <img src="" alt="Emily Clarke's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.13</p>
+<p><strong>Interests:</strong> [&quot;pets&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> anxious</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Mei Zhang</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/43.png" alt="Mei Zhang's profile picture">
+<!-- <img src="" alt="Mei Zhang's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.5</p>
+<p><strong>Interests:</strong> [&quot;sports&quot;, &quot;cooking&quot;, &quot;history&quot;, &quot;pets&quot;, &quot;fashion&quot;]</p>
+<!-- <p><strong>Mood:</strong> excited</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Jackson Tremblay</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/44.png" alt="Jackson Tremblay's profile picture">
+<!-- <img src="" alt="Jackson Tremblay's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.37</p>
+<p><strong>Interests:</strong> [&quot;science&quot;, &quot;traveling&quot;, &quot;politics&quot;, &quot;fashion&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élodie Dubois</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/45.png" alt="Élodie Dubois's profile picture">
+<!-- <img src="" alt="Élodie Dubois's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0.91</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;, &quot;science&quot;, &quot;gardening&quot;, &quot;sports&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Mehta</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/46.png" alt="Aarav Mehta's profile picture">
+<!-- <img src="" alt="Aarav Mehta's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.23</p>
+<p><strong>Interests:</strong> [&quot;politics&quot;, &quot;movies&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> confident</p> -->
+<p><strong>Personality Type:</strong> motivational type</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Avery Johnson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/47.png" alt="Avery Johnson's profile picture">
+<!-- <img src="" alt="Avery Johnson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.42</p>
+<p><strong>Interests:</strong> [&quot;politics&quot;, &quot;photography&quot;, &quot;pets&quot;, &quot;education&quot;, &quot;technology&quot;]</p>
+<!-- <p><strong>Mood:</strong> sad</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lucas Oliveira</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/48.png" alt="Lucas Oliveira's profile picture">
+<!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Brazil</p>
+<p><strong>Political Ideology Leaning:</strong> 0.87</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> jokester</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Riku Tanaka</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/49.png" alt="Riku Tanaka's profile picture">
+<!-- <img src="" alt="Riku Tanaka's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.77</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;, &quot;reading&quot;, &quot;hiking&quot;, &quot;photography&quot;, &quot;fashion&quot;]</p>
+<!-- <p><strong>Mood:</strong> fearful</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Luca Bianchi</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/50.png" alt="Luca Bianchi's profile picture">
+<!-- <img src="" alt="Luca Bianchi's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Italy</p>
+<p><strong>Political Ideology Leaning:</strong> 0.42</p>
+<p><strong>Interests:</strong> [&quot;history&quot;, &quot;science&quot;, &quot;music&quot;, &quot;sports&quot;, &quot;pets&quot;]</p>
+<!-- <p><strong>Mood:</strong> bored</p> -->
+<p><strong>Personality Type:</strong> dreamer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Charlotte Davies</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/51.png" alt="Charlotte Davies's profile picture">
+<!-- <img src="" alt="Charlotte Davies's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.41</p>
+<p><strong>Interests:</strong> [&quot;hiking&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Mei Lin</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/52.png" alt="Mei Lin's profile picture">
+<!-- <img src="" alt="Mei Lin's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.97</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;]</p>
+<!-- <p><strong>Mood:</strong> bored</p> -->
+<p><strong>Personality Type:</strong> realist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Kapoor</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/53.png" alt="Aarav Kapoor's profile picture">
+<!-- <img src="" alt="Aarav Kapoor's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.48</p>
+<p><strong>Interests:</strong> [&quot;photography&quot;, &quot;fashion&quot;, &quot;reading&quot;, &quot;education&quot;, &quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> overwhelmed</p> -->
+<p><strong>Personality Type:</strong> adventurous</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Li Wei</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/54.png" alt="Li Wei's profile picture">
+<!-- <img src="" alt="Li Wei's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.92</p>
+<p><strong>Interests:</strong> [&quot;gaming&quot;, &quot;hiking&quot;, &quot;history&quot;, &quot;education&quot;]</p>
+<!-- <p><strong>Mood:</strong> excited</p> -->
+<p><strong>Personality Type:</strong> dreamer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lena Fischer</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/55.png" alt="Lena Fischer's profile picture">
+<!-- <img src="" alt="Lena Fischer's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.65</p>
+<p><strong>Interests:</strong> [&quot;history&quot;, &quot;gardening&quot;, &quot;education&quot;, &quot;fashion&quot;]</p>
+<!-- <p><strong>Mood:</strong> lonely</p> -->
+<p><strong>Personality Type:</strong> jokester</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Liam Johnson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/56.png" alt="Liam Johnson's profile picture">
+<!-- <img src="" alt="Liam Johnson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.47</p>
+<p><strong>Interests:</strong> [&quot;politics&quot;, &quot;fitness&quot;]</p>
+<!-- <p><strong>Mood:</strong> hopeful</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Brandon McAllister</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/57.png" alt="Brandon McAllister's profile picture">
+<!-- <img src="" alt="Brandon McAllister's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.66</p>
+<p><strong>Interests:</strong> [&quot;pets&quot;, &quot;cooking&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> relaxed</p> -->
+<p><strong>Personality Type:</strong> extrovert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lucas Oliveira</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/58.png" alt="Lucas Oliveira's profile picture">
+<!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Brazil</p>
+<p><strong>Political Ideology Leaning:</strong> 0.48</p>
+<p><strong>Interests:</strong> [&quot;reading&quot;, &quot;pets&quot;]</p>
+<!-- <p><strong>Mood:</strong> sad</p> -->
+<p><strong>Personality Type:</strong> motivational type</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Luca Bianchi</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/59.png" alt="Luca Bianchi's profile picture">
+<!-- <img src="" alt="Luca Bianchi's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Italy</p>
+<p><strong>Political Ideology Leaning:</strong> 0.5</p>
+<p><strong>Interests:</strong> [&quot;technology&quot;]</p>
+<!-- <p><strong>Mood:</strong> hopeful</p> -->
+<p><strong>Personality Type:</strong> snob</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/60.png" alt="Emily Thompson's profile picture">
+<!-- <img src="" alt="Emily Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.39</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;, &quot;writing&quot;, &quot;technology&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> surprised</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Oliver Bennett</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/61.png" alt="Oliver Bennett's profile picture">
+<!-- <img src="" alt="Oliver Bennett's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0</p>
+<p><strong>Interests:</strong> [&quot;pets&quot;]</p>
+<!-- <p><strong>Mood:</strong> relaxed</p> -->
+<p><strong>Personality Type:</strong> adventurous</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Liam Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/62.png" alt="Liam Thompson's profile picture">
+<!-- <img src="" alt="Liam Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.16</p>
+<p><strong>Interests:</strong> [&quot;sports&quot;, &quot;fashion&quot;, &quot;volunteering&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Johnson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/63.png" alt="Emily Johnson's profile picture">
+<!-- <img src="" alt="Emily Johnson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.91</p>
+<p><strong>Interests:</strong> [&quot;art&quot;, &quot;volunteering&quot;, &quot;history&quot;, &quot;photography&quot;]</p>
+<!-- <p><strong>Mood:</strong> relaxed</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lina Schneider</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/64.png" alt="Lina Schneider's profile picture">
+<!-- <img src="" alt="Lina Schneider's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.09</p>
+<p><strong>Interests:</strong> [&quot;reading&quot;]</p>
+<!-- <p><strong>Mood:</strong> confident</p> -->
+<p><strong>Personality Type:</strong> intellectual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Marco Bianchi</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/65.png" alt="Marco Bianchi's profile picture">
+<!-- <img src="" alt="Marco Bianchi's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Italy</p>
+<p><strong>Political Ideology Leaning:</strong> 0.24</p>
+<p><strong>Interests:</strong> [&quot;music&quot;, &quot;writing&quot;, &quot;science&quot;, &quot;education&quot;, &quot;politics&quot;]</p>
+<!-- <p><strong>Mood:</strong> overwhelmed</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lucas Oliveira</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/66.png" alt="Lucas Oliveira's profile picture">
+<!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Brazil</p>
+<p><strong>Political Ideology Leaning:</strong> 0.29</p>
+<p><strong>Interests:</strong> [&quot;gardening&quot;, &quot;fashion&quot;, &quot;education&quot;]</p>
+<!-- <p><strong>Mood:</strong> calm</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Brianna McKenzie</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/67.png" alt="Brianna McKenzie's profile picture">
+<!-- <img src="" alt="Brianna McKenzie's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.91</p>
+<p><strong>Interests:</strong> [&quot;history&quot;, &quot;traveling&quot;, &quot;photography&quot;, &quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> relaxed</p> -->
+<p><strong>Personality Type:</strong> motivational type</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Mei Wong</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/68.png" alt="Mei Wong's profile picture">
+<!-- <img src="" alt="Mei Wong's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.83</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;, &quot;fitness&quot;, &quot;gardening&quot;]</p>
+<!-- <p><strong>Mood:</strong> grateful</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Luca Bianchi</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/69.png" alt="Luca Bianchi's profile picture">
+<!-- <img src="" alt="Luca Bianchi's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Italy</p>
+<p><strong>Political Ideology Leaning:</strong> 0.57</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;, &quot;movies&quot;, &quot;photography&quot;, &quot;education&quot;, &quot;fitness&quot;]</p>
+<!-- <p><strong>Mood:</strong> nostalgic</p> -->
+<p><strong>Personality Type:</strong> friendly person</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lena Fischer</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/70.png" alt="Lena Fischer's profile picture">
+<!-- <img src="" alt="Lena Fischer's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.94</p>
+<p><strong>Interests:</strong> [&quot;education&quot;]</p>
+<!-- <p><strong>Mood:</strong> grateful</p> -->
+<p><strong>Personality Type:</strong> adventurous</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Jordan Mitchell</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/71.png" alt="Jordan Mitchell's profile picture">
+<!-- <img src="" alt="Jordan Mitchell's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.65</p>
+<p><strong>Interests:</strong> [&quot;art&quot;, &quot;politics&quot;, &quot;music&quot;, &quot;hiking&quot;]</p>
+<!-- <p><strong>Mood:</strong> sad</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lena Schneider</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/72.png" alt="Lena Schneider's profile picture">
+<!-- <img src="" alt="Lena Schneider's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.23</p>
+<p><strong>Interests:</strong> [&quot;volunteering&quot;, &quot;fitness&quot;, &quot;art&quot;]</p>
+<!-- <p><strong>Mood:</strong> disappointed</p> -->
+<p><strong>Personality Type:</strong> adventurous</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Olivia Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/73.png" alt="Olivia Thompson's profile picture">
+<!-- <img src="" alt="Olivia Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.57</p>
+<p><strong>Interests:</strong> [&quot;politics&quot;, &quot;gardening&quot;, &quot;cooking&quot;, &quot;science&quot;]</p>
+<!-- <p><strong>Mood:</strong> disappointed</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lucas Almeida</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/74.png" alt="Lucas Almeida's profile picture">
+<!-- <img src="" alt="Lucas Almeida's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Brazil</p>
+<p><strong>Political Ideology Leaning:</strong> 0.49</p>
+<p><strong>Interests:</strong> [&quot;education&quot;, &quot;fitness&quot;, &quot;photography&quot;, &quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> motivational type</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Aarav Sharma</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/75.png" alt="Aarav Sharma's profile picture">
+<!-- <img src="" alt="Aarav Sharma's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.41</p>
+<p><strong>Interests:</strong> [&quot;movies&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> realist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élodie Dubois</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/76.png" alt="Élodie Dubois's profile picture">
+<!-- <img src="" alt="Élodie Dubois's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0.82</p>
+<p><strong>Interests:</strong> [&quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> surprised</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/77.png" alt="Emily Thompson's profile picture">
+<!-- <img src="" alt="Emily Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.29</p>
+<p><strong>Interests:</strong> [&quot;photography&quot;]</p>
+<!-- <p><strong>Mood:</strong> bored</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lukas Schmidt</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/78.png" alt="Lukas Schmidt's profile picture">
+<!-- <img src="" alt="Lukas Schmidt's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.06</p>
+<p><strong>Interests:</strong> [&quot;education&quot;, &quot;art&quot;, &quot;reading&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> innovator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Johnson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/79.png" alt="Emily Johnson's profile picture">
+<!-- <img src="" alt="Emily Johnson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.58</p>
+<p><strong>Interests:</strong> [&quot;pets&quot;, &quot;writing&quot;, &quot;gardening&quot;]</p>
+<!-- <p><strong>Mood:</strong> content</p> -->
+<p><strong>Personality Type:</strong> motivational type</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Élodie Dubois</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/80.png" alt="Élodie Dubois's profile picture">
+<!-- <img src="" alt="Élodie Dubois's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> France</p>
+<p><strong>Political Ideology Leaning:</strong> 0.62</p>
+<p><strong>Interests:</strong> [&quot;art&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> intellectual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Ananya Sharma</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/81.png" alt="Ananya Sharma's profile picture">
+<!-- <img src="" alt="Ananya Sharma's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> India</p>
+<p><strong>Political Ideology Leaning:</strong> 0.46</p>
+<p><strong>Interests:</strong> [&quot;technology&quot;, &quot;education&quot;, &quot;volunteering&quot;]</p>
+<!-- <p><strong>Mood:</strong> relaxed</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Megan Walker</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/82.png" alt="Megan Walker's profile picture">
+<!-- <img src="" alt="Megan Walker's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.9</p>
+<p><strong>Interests:</strong> [&quot;science&quot;, &quot;writing&quot;, &quot;photography&quot;]</p>
+<!-- <p><strong>Mood:</strong> overwhelmed</p> -->
+<p><strong>Personality Type:</strong> intellectual</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Marco Rossi</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/83.png" alt="Marco Rossi's profile picture">
+<!-- <img src="" alt="Marco Rossi's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Italy</p>
+<p><strong>Political Ideology Leaning:</strong> 0.48</p>
+<p><strong>Interests:</strong> [&quot;music&quot;, &quot;education&quot;, &quot;pets&quot;]</p>
+<!-- <p><strong>Mood:</strong> sad</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Jessica Thompson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/84.png" alt="Jessica Thompson's profile picture">
+<!-- <img src="" alt="Jessica Thompson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.59</p>
+<p><strong>Interests:</strong> [&quot;history&quot;, &quot;cooking&quot;, &quot;sports&quot;, &quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> surprised</p> -->
+<p><strong>Personality Type:</strong> thinker</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lucas Oliveira</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/85.png" alt="Lucas Oliveira's profile picture">
+<!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Brazil</p>
+<p><strong>Political Ideology Leaning:</strong> 0.46</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;, &quot;cooking&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> realist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lena Schneider</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/86.png" alt="Lena Schneider's profile picture">
+<!-- <img src="" alt="Lena Schneider's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.56</p>
+<p><strong>Interests:</strong> [&quot;technology&quot;]</p>
+<!-- <p><strong>Mood:</strong> fearful</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lukas Schneider</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/87.png" alt="Lukas Schneider's profile picture">
+<!-- <img src="" alt="Lukas Schneider's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.9</p>
+<p><strong>Interests:</strong> [&quot;pets&quot;, &quot;art&quot;, &quot;education&quot;, &quot;music&quot;, &quot;politics&quot;]</p>
+<!-- <p><strong>Mood:</strong> curious</p> -->
+<p><strong>Personality Type:</strong> extrovert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Marlene Fischer</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/88.png" alt="Marlene Fischer's profile picture">
+<!-- <img src="" alt="Marlene Fischer's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.09</p>
+<p><strong>Interests:</strong> [&quot;gaming&quot;, &quot;history&quot;, &quot;writing&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> bully</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Mei Zhang</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/89.png" alt="Mei Zhang's profile picture">
+<!-- <img src="" alt="Mei Zhang's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> China</p>
+<p><strong>Political Ideology Leaning:</strong> 0.11</p>
+<p><strong>Interests:</strong> [&quot;history&quot;]</p>
+<!-- <p><strong>Mood:</strong> frustrated</p> -->
+<p><strong>Personality Type:</strong> motivational type</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Bennett</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/90.png" alt="Emily Bennett's profile picture">
+<!-- <img src="" alt="Emily Bennett's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.33</p>
+<p><strong>Interests:</strong> [&quot;volunteering&quot;]</p>
+<!-- <p><strong>Mood:</strong> confident</p> -->
+<p><strong>Personality Type:</strong> dreamer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Haruto Nakamura</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/91.png" alt="Haruto Nakamura's profile picture">
+<!-- <img src="" alt="Haruto Nakamura's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.6</p>
+<p><strong>Interests:</strong> [&quot;hiking&quot;, &quot;writing&quot;, &quot;photography&quot;, &quot;fitness&quot;, &quot;pets&quot;]</p>
+<!-- <p><strong>Mood:</strong> happy</p> -->
+<p><strong>Personality Type:</strong> introvert</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Finn Becker</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/92.png" alt="Finn Becker's profile picture">
+<!-- <img src="" alt="Finn Becker's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Germany</p>
+<p><strong>Political Ideology Leaning:</strong> 0.16</p>
+<p><strong>Interests:</strong> [&quot;technology&quot;, &quot;pets&quot;, &quot;sports&quot;, &quot;photography&quot;, &quot;gaming&quot;]</p>
+<!-- <p><strong>Mood:</strong> content</p> -->
+<p><strong>Personality Type:</strong> realist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Oliver Bennett</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/93.png" alt="Oliver Bennett's profile picture">
+<!-- <img src="" alt="Oliver Bennett's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United Kingdom</p>
+<p><strong>Political Ideology Leaning:</strong> 0.08</p>
+<p><strong>Interests:</strong> [&quot;movies&quot;, &quot;fitness&quot;, &quot;gaming&quot;, &quot;reading&quot;, &quot;cooking&quot;]</p>
+<!-- <p><strong>Mood:</strong> relaxed</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Johnson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/94.png" alt="Emily Johnson's profile picture">
+<!-- <img src="" alt="Emily Johnson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.95</p>
+<p><strong>Interests:</strong> [&quot;technology&quot;, &quot;photography&quot;, &quot;gardening&quot;]</p>
+<!-- <p><strong>Mood:</strong> lonely</p> -->
+<p><strong>Personality Type:</strong> caregiver</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Tyler McKenzie</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/95.png" alt="Tyler McKenzie's profile picture">
+<!-- <img src="" alt="Tyler McKenzie's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Canada</p>
+<p><strong>Political Ideology Leaning:</strong> 0.07</p>
+<p><strong>Interests:</strong> [&quot;sports&quot;, &quot;cooking&quot;]</p>
+<!-- <p><strong>Mood:</strong> anxious</p> -->
+<p><strong>Personality Type:</strong> traditionalist</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Lucas Ferreira</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/96.png" alt="Lucas Ferreira's profile picture">
+<!-- <img src="" alt="Lucas Ferreira's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Brazil</p>
+<p><strong>Political Ideology Leaning:</strong> 0.85</p>
+<p><strong>Interests:</strong> [&quot;traveling&quot;]</p>
+<!-- <p><strong>Mood:</strong> bored</p> -->
+<p><strong>Personality Type:</strong> dreamer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Emily Johnson</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/97.png" alt="Emily Johnson's profile picture">
+<!-- <img src="" alt="Emily Johnson's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> United States</p>
+<p><strong>Political Ideology Leaning:</strong> 0.94</p>
+<p><strong>Interests:</strong> [&quot;writing&quot;, &quot;science&quot;, &quot;traveling&quot;]</p>
+<!-- <p><strong>Mood:</strong> excited</p> -->
+<p><strong>Personality Type:</strong> adventurous</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Giulia Ricci</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/98.png" alt="Giulia Ricci's profile picture">
+<!-- <img src="" alt="Giulia Ricci's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Italy</p>
+<p><strong>Political Ideology Leaning:</strong> 0.43</p>
+<p><strong>Interests:</strong> [&quot;science&quot;, &quot;traveling&quot;, &quot;fitness&quot;]</p>
+<!-- <p><strong>Mood:</strong> surprised</p> -->
+<p><strong>Personality Type:</strong> doer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- Profile Card -->
+<div class="column is-full">
+<div class="card has-background-grey-darker" style='box-shadow: none;'>
+<div class="card-content">
+<div class="columns">
+<!-- Left Column with Name and Profile Picture -->
+<div class="column is-one-third">
+<h3 class="title is-4">Hiroshi Tanaka</h3></p>
+<p><figure class="image is-128x128">
+<img class='is-rounded' src="/-/images/99.png" alt="Hiroshi Tanaka's profile picture">
+<!-- <img src="" alt="Hiroshi Tanaka's profile picture"> -->
+</figure></p>
+<p></div>
+<!-- Right Column with Info, vertically centered -->
+<div class="column is-flex is-align-items-center">
+<div>
+<p><strong>Nationality:</strong> Japan</p>
+<p><strong>Political Ideology Leaning:</strong> 0.79</p>
+<p><strong>Interests:</strong> [&quot;history&quot;, &quot;reading&quot;]</p>
+<!-- <p><strong>Mood:</strong> excited</p> -->
+<p><strong>Personality Type:</strong> snob</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+<p></div>
+</div>
+</div>
+</div></p>
+</section>
+
+    </main>
+    <!-- Footer (Optional) -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                made by <strong><a href="https://mw3i.github.io/">mw</a></strong>.
+            </p>
+        </div>
+    </footer>
+    <!-- Burger Menu Script for mobile -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

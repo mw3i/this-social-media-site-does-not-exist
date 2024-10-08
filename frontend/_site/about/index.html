@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Social Media Site Doesn't Exist</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<style type="text/css">
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+</style>
+
+<body data-theme="dark">
+    <!-- Header / Navbar -->
+    <header>
+    <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong>This Social Media Site Doesn't Exist</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item mx-1 " href="/">
+                    Feed
+                </a>
+                <a class="navbar-item mx-1 " href="/profiles/">
+                    Profiles
+                </a>
+                <a class="navbar-item mx-1 is-active" href="/about/">
+                    About
+                </a>
+                <a class="navbar-item mx-1 " href="/experiments/">
+                   Experiments 
+                </a>
+            </div>
+        </div>
+    </nav>
+        <style>
+        /* Custom styles for the active tab */
+        .navbar-item {
+            border-radius: 12px !important;
+        }
+
+        .navbar-item.is-active {
+            background-color: #00d1b2;
+            /* Bulma's primary color */
+            color: white;
+            border-radius: 12px;
+            /* Rounded background */
+/*            padding-left: 10px;*/
+/*            padding-right: 10px;*/
+        }
+
+        .navbar-item.is-active:hover {
+            background-color: #00c4a7;
+            /* Slightly different shade on hover */
+        }
+        </style>
+    </header>
+    <!-- Main Content -->
+    <main class="section content" style='padding-top: 80px;'>
+            <div class="container content is-max-tablet py-6">
+    <h1 style='font-size: 3rem;'>This Social Media Site Doesn't Exist</h1>
+<p>A snapshot of a social media site with LLM-generated users and content.</p>
+<p>Disclaimer: Hopefully no one has already done this exact thing</p>
+<p><strong>total cost</strong>: 3$</p>
+<p><strong>total time</strong>: 8 hours</p>
+<hr>
+<h1>ToDo</h1>
+<ul>
+<li>[ ] post to github</li>
+</ul>
+<h1>How it works</h1>
+<p>A bunch of scripts in <code>data/</code> generate data tables for (in order):</p>
+<ul>
+<li><code>profiles</code> (with sampled profile attributes and dalle-generated images)</li>
+<li><code>posts</code> (from randomly selected users)</li>
+<li><code>comments</code> (from randomly selected users for randomly selected posts)</li>
+</ul>
+<p>And it's all stored in <code>data/db.sqlite</code></p>
+<p>Then, eleventy + liquid html build the pages in <code>frontend/</code> via sql queries (custom filter <code>frontend/_plugins</code>)</p>
+<p>The result is stored in <code>_site</code></p>
+<h1>Repo Org</h1>
+<ul>
+<li><code>data</code> has a bunch of data generation scripts
+<ul>
+<li><code>build</code>: regenerate all the content</li>
+</ul>
+</li>
+<li><code>frontend</code> is an eleventy-generated static site
+<ul>
+<li><code>build</code>: generate static site</li>
+</ul>
+</li>
+<li><code>build</code>: runs <code>data/build</code> and <code>frontend/build</code></li>
+<li><code>ops</code> are for maintenance &amp; experimentation</li>
+</ul>
+<h1>Future Directions:</h1>
+<ul>
+<li>[ ] trace of users past posts in the post generation prompt. this could serve as a &quot;personality trace&quot; that can evolve from randomness over time (though there is no selection mechanism. we could add a selection mechanism by weighting based on likes)</li>
+<li>[ ] nested conversations</li>
+<li>[ ] put more parameters in <code>config</code> for easier experimentation</li>
+<li>[x] switch to sqlite3 for the data storage (as opposed to the json)</li>
+</ul>
+<hr>
+<h1>Notes</h1>
+<ul>
+<li>you're probably thinking the <code>temperature</code> variable in profile makes no sense. it was originally meant to be the temperature parameter for the chatgpt API, and might have an unintended effect on the model behavior when shown in the prompt; but I left it in cuz why not</li>
+<li>there are lots of symlinks; they may create headaches but until then they make the repo look more elegant</li>
+</ul>
+
+</div>
+
+    </main>
+    <!-- Footer (Optional) -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                made by <strong><a href="https://mw3i.github.io/">mw</a></strong>.
+            </p>
+        </div>
+    </footer>
+    <!-- Burger Menu Script for mobile -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>

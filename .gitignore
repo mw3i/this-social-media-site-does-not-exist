@@ -1,0 +1,13 @@
+# repo
+env
+data/.archive/
+.sublime/
+
+# python
+__pycache__/
+
+# Annoying MacOS Litter
+.DS_Store
+._.*
+
+
