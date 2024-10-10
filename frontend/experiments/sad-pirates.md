@@ -35,7 +35,7 @@ Prompt appended with: "ALSO: make sure you talk like a really sad pirate the who
                 <figure class="media-left">
                     <p class="image is-64x64">
                         <!-- <img src="{{ post.user.profile_pic_path }}" alt="Profile Picture"> -->
-                        <img class="is-rounded" src="/-/images/{{ post.user }}.png" alt="Profile Picture">
+                        <img class="is-rounded" src="{{ baseurl }}/-/images/{{ post.user }}.png" alt="Profile Picture">
                     </p>
                 </figure>
                 <div class="media-content">
@@ -57,7 +57,7 @@ Prompt appended with: "ALSO: make sure you talk like a really sad pirate the who
                 <article class="media mt-2">
                     <figure class="media-left">
                         <p class="image is-48x48">
-                            <img class="is-rounded" src="/-/images/{{ comment.profile_id }}.png" alt="Profile Picture">
+                            <img class="is-rounded" src="{{ baseurl }}/-/images/{{ comment.profile_id }}.png" alt="Profile Picture">
                         </p>
                     </figure>
                     <div class="media-content" data-prompt-tooltip={{ comment.prompt | escape | jsonify }}>
