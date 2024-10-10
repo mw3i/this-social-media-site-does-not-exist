@@ -19,63 +19,66 @@ body {
 <body data-theme="dark">
     <!-- Header / Navbar -->
     <header>
-        <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/this-social-media-site-does-not-exist/">
-                    <strong>This Social Media Site Doesn't Exist</strong>
+    <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong>This Social Media Site Doesn't Exist</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item mx-1 " href="/">
+                    Feed
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
+                <a class="navbar-item mx-1 " href="/profiles/">
+                    Profiles
+                </a>
+                <a class="navbar-item mx-1 " href="/about/">
+                    About
+                </a>
+                <a class="navbar-item mx-1 is-active" href="/experiments/">
+                   Experiments 
                 </a>
             </div>
-            <div id="navbarBasic" class="navbar-menu is-align-items-center">
-                <div class="navbar-end pr-3">
-                    
-                    <a class="navbar-item mx-1 " href="/this-social-media-site-does-not-exist/" style="padding: 14px; height: 2.4rem !important;">
-                        Feed
-                    </a>
-                    
-                    <a class="navbar-item mx-1 " href="/this-social-media-site-does-not-exist/profiles/" style="padding: 14px; height: 2.4rem !important;">
-                        Profiles
-                    </a>
-                    
-                    <a class="navbar-item mx-1 " href="/this-social-media-site-does-not-exist/about/" style="padding: 14px; height: 2.4rem !important;">
-                        About
-                    </a>
-                    <a class="navbar-item mx-1 is-active" href="/this-social-media-site-does-not-exist/experiments/" style="padding: 14px; height: 2.4rem !important;">
-                        Experiments
-                    </a>
-                </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
         <style>
         /* Custom styles for the active tab */
         .navbar-item {
-            border-radius: 8px !important;
+            border-radius: 12px !important;
         }
 
         .navbar-item.is-active {
             background-color: #00d1b2;
+            /* Bulma's primary color */
             color: white;
+            border-radius: 12px;
+            /* Rounded background */
+/*            padding-left: 10px;*/
+/*            padding-right: 10px;*/
         }
 
         .navbar-item.is-active:hover {
             background-color: #00c4a7;
+            /* Slightly different shade on hover */
         }
         </style>
     </header>
     <!-- Main Content -->
     <main class="section content" style='padding-top: 80px;'>
-        <section class="section">
+            <section class="section">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-three-quarters">
                 <div class="columns is-multiline">
 <p><!-- experiment Card -->
 <div class="column is-full has-background-grey-darker my-5" style='border-radius: 15px;'>
-<a href="/this-social-media-site-does-not-exist//experiments/bad-mood/" class="card has-background-grey-darker">
+<a href="/experiments/bad-mood/" class="card has-background-grey-darker">
 <div class="card-content">
 <p class="title has-text-white">Comments With Bad Mood</p>
 </div>
@@ -83,7 +86,7 @@ body {
 </div></p>
 <p><!-- experiment Card -->
 <div class="column is-full has-background-grey-darker my-5" style='border-radius: 15px;'>
-<a href="/this-social-media-site-does-not-exist//experiments/good-mood/" class="card has-background-grey-darker">
+<a href="/experiments/good-mood/" class="card has-background-grey-darker">
 <div class="card-content">
 <p class="title has-text-white">Comments With Good Mood</p>
 </div>
@@ -91,7 +94,7 @@ body {
 </div></p>
 <p><!-- experiment Card -->
 <div class="column is-full has-background-grey-darker my-5" style='border-radius: 15px;'>
-<a href="/this-social-media-site-does-not-exist//experiments/sad-pirates/" class="card has-background-grey-darker">
+<a href="/experiments/sad-pirates/" class="card has-background-grey-darker">
 <div class="card-content">
 <p class="title has-text-white">Commenters are Sad Pirates</p>
 </div>
@@ -129,13 +132,5 @@ body {
     });
     </script>
 </body>
-<style>
-.media {
-    transition: background-color 0.3s ease; /* Smooth transition of background color */
-    padding: 14px;
-    border-radius: 6px;
-}
-.media:hover {
-    background-color: rgba(0,0,0,.2); /* Change background color on hover */
-}
+
 </html>
