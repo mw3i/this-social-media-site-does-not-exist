@@ -19,59 +19,56 @@ body {
 <body data-theme="dark">
     <!-- Header / Navbar -->
     <header>
-    <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <strong>This Social Media Site Doesn't Exist</strong>
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbarBasic" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item mx-1 {% if page.url == '/' %}is-active{% endif %}" href="/">
-                    Feed
+        <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="{{ baseUrl }}/">
+                    <strong>This Social Media Site Doesn't Exist</strong>
                 </a>
-                <a class="navbar-item mx-1 {% if page.url == '/profiles/' %}is-active{% endif %}" href="/profiles/">
-                    Profiles
-                </a>
-                <a class="navbar-item mx-1 {% if page.url == '/about/' %}is-active{% endif %}" href="/about/">
-                    About
-                </a>
-                <a class="navbar-item mx-1 {% if page.url contains '/experiments/' %}is-active{% endif %}" href="/experiments/">
-                   Experiments 
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
             </div>
-        </div>
-    </nav>
+            <div id="navbarBasic" class="navbar-menu is-align-items-center">
+                <div class="navbar-end pr-3">
+                    {% assign fullUrl = baseUrl | append: "/" %}
+                    <a class="navbar-item mx-1 {% if page.url == fullUrl %}is-active{% endif %}" href="{{ baseUrl }}/" style="padding: 14px; height: 2.4rem !important;">
+                        Feed
+                    </a>
+                    {% assign fullUrlProfiles = baseUrl | append: "/profiles/" %}
+                    <a class="navbar-item mx-1 {% if page.url == fullUrlProfiles %}is-active{% endif %}" href="{{ baseUrl }}/profiles/" style="padding: 14px; height: 2.4rem !important;">
+                        Profiles
+                    </a>
+                    {% assign fullUrlAbout = baseUrl | append: "/about/" %}
+                    <a class="navbar-item mx-1 {% if page.url == fullUrlAbout %}is-active{% endif %}" href="{{ baseUrl }}/about/" style="padding: 14px; height: 2.4rem !important;">
+                        About
+                    </a>
+                    <a class="navbar-item mx-1 {% if page.url contains '/experiments/' %}is-active{% endif %}" href="{{ baseUrl }}/experiments/" style="padding: 14px; height: 2.4rem !important;">
+                        Experiments
+                    </a>
+                </div>
+            </div>
+        </nav>
         <style>
         /* Custom styles for the active tab */
         .navbar-item {
-            border-radius: 12px !important;
+            border-radius: 8px !important;
         }
 
         .navbar-item.is-active {
             background-color: #00d1b2;
-            /* Bulma's primary color */
             color: white;
-            border-radius: 12px;
-            /* Rounded background */
-/*            padding-left: 10px;*/
-/*            padding-right: 10px;*/
         }
 
         .navbar-item.is-active:hover {
             background-color: #00c4a7;
-            /* Slightly different shade on hover */
         }
         </style>
     </header>
     <!-- Main Content -->
     <main class="section content" style='padding-top: 80px;'>
-            {{ content }}
+        {{ content }}
     </main>
     <!-- Footer (Optional) -->
     <footer class="footer">
@@ -98,5 +95,13 @@ body {
     });
     </script>
 </body>
-
+<style>
+.media {
+    transition: background-color 0.3s ease; /* Smooth transition of background color */
+    padding: 14px;
+    border-radius: 6px;
+}
+.media:hover {
+    background-color: rgba(0,0,0,.2); /* Change background color on hover */
+}
 </html>

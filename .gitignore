@@ -1,7 +1,10 @@
 # repo
 env
 data/.archive/
+frontend/_site_dev/
+
 .sublime/
+
 
 # python
 __pycache__/

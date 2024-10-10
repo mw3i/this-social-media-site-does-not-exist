@@ -1,1 +1,3 @@
+# Serve Site in Dev Mode (with _site_dev as the source loc, and the baseUrl = nothing)
+export ELEVENTY_DEV_MODE="Y"
 eleventy --watch --serve

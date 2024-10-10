@@ -19,7 +19,7 @@ title: Profiles
                                         <h3 class="title is-4">{{ profile.name }}</h3>
                                         {% if profile.profile_pic_path %}
                                         <figure class="image is-128x128">
-                                            <img class='is-rounded' src="/-/images/{{ profile.id }}.png" alt="{{ profile.name }}'s profile picture">
+                                            <img class='is-rounded' src="{{ baseUrl }}/-/images/{{ profile.id }}.png" alt="{{ profile.name }}'s profile picture">
                                             <!-- <img src="{{ profile.profile_pic_path }}" alt="{{ profile.name }}'s profile picture"> -->
                                         </figure>
                                         {% else %}

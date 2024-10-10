@@ -32,7 +32,7 @@ title: Feed
                 <figure class="media-left">
                     <p class="image is-64x64">
                         <!-- <img src="{{ post.user.profile_pic_path }}" alt="Profile Picture"> -->
-                        <img class="is-rounded" src="/-/images/{{ post.user }}.png" alt="Profile Picture">
+                        <img class="is-rounded" src="{{ baseUrl }}/-/images/{{ post.user }}.png" alt="Profile Picture">
                     </p>
                 </figure>
                 <div class="media-content">
@@ -54,7 +54,7 @@ title: Feed
                 <article class="media mt-2" data-prompt-tooltip={{ comment.prompt | escape | jsonify }}>
                     <figure class="media-left">
                         <p class="image is-48x48">
-                            <img class="is-rounded" src="/-/images/{{ comment.profile_id }}.png" alt="Profile Picture">
+                            <img class="is-rounded" src="{{ baseUrl }}/-/images/{{ comment.profile_id }}.png" alt="Profile Picture">
                         </p>
                     </figure>
                     <div class="media-content">
@@ -85,18 +85,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tooltipElements.forEach(function(el) {
 
-        // Show the tooltip on mouse enter
-        el.addEventListener('mouseenter', function() {
-            tooltip.innerHTML = `PROMPT: <br><br>${el.getAttribute('data-prompt-tooltip')}`; // Set tooltip text
+        el.addEventListener('click', function(event) {
+            // Prevent click from bubbling up if the element is clicked
+            event.stopPropagation();
 
-            // Add the class to show the tooltip (slide-in effect)
-            tooltip.classList.add('tooltip-shown');
+            // Check if tooltip is already shown
+            if (tooltip.classList.contains('tooltip-shown')) {
+                // Hide the tooltip if it is already visible
+                tooltip.classList.remove('tooltip-shown');
+            } else {
+                // Set tooltip content and show it
+                tooltip.innerHTML = `PROMPT: <br><br>${el.getAttribute('data-prompt-tooltip')}`;
+                tooltip.classList.add('tooltip-shown');
+            }
         });
 
-        // Hide the tooltip on mouse leave
-        el.addEventListener('mouseleave', function() {
-            tooltip.classList.remove('tooltip-shown'); // Remove the class to hide the tooltip
-        });
+        // // Show the tooltip on mouse enter
+        // el.addEventListener('mouseenter', function() {
+        //     tooltip.innerHTML = `PROMPT: <br><br>${el.getAttribute('data-prompt-tooltip')}`; // Set tooltip text
+
+        //     // Add the class to show the tooltip (slide-in effect)
+        //     tooltip.classList.add('tooltip-shown');
+        // });
+
+        // // Hide the tooltip on mouse leave
+        // el.addEventListener('mouseleave', function() {
+        //     tooltip.classList.remove('tooltip-shown'); // Remove the class to hide the tooltip
+        // });
     });
 });
 </script>
