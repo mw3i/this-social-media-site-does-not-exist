@@ -32,15 +32,15 @@ body {
             </div>
             <div id="navbarBasic" class="navbar-menu is-align-items-center">
                 <div class="navbar-end pr-3">
-                    {% assign fullUrl = baseUrl | append: "/" %}
+                    {% assign fullUrl = baseUrl | concat: "/" %}
                     <a class="navbar-item mx-1 {% if page.url == fullUrl %}is-active{% endif %}" href="{{ baseUrl }}/" style="padding: 14px; height: 2.4rem !important;">
                         Feed
                     </a>
-                    {% assign fullUrlProfiles = baseUrl | append: "/profiles/" %}
+                    {% assign fullUrlProfiles = baseUrl | concat: "/profiles/" %}
                     <a class="navbar-item mx-1 {% if page.url == fullUrlProfiles %}is-active{% endif %}" href="{{ baseUrl }}/profiles/" style="padding: 14px; height: 2.4rem !important;">
                         Profiles
                     </a>
-                    {% assign fullUrlAbout = baseUrl | append: "/about/" %}
+                    {% assign fullUrlAbout = baseUrl | concat: "/about/" %}
                     <a class="navbar-item mx-1 {% if page.url == fullUrlAbout %}is-active{% endif %}" href="{{ baseUrl }}/about/" style="padding: 14px; height: 2.4rem !important;">
                         About
                     </a>

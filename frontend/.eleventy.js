@@ -1,6 +1,5 @@
 // eleventy.config.js
 const sqlitePlugin = require('./_plugins/sqlconnect.js');
-console.log('start')
 module.exports = function(eleventyConfig) {
     // Load the SQLite plugin and pass options, such as the database path
 

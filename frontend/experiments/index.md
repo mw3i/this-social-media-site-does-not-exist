@@ -15,7 +15,7 @@ pagination:
                     {% for experiment in pagination.items %}
                     <!-- experiment Card -->
                     <div class="column is-full has-background-grey-darker my-5" style='border-radius: 15px;'>
-                        <a href="{{ experiment.url }}" class="card has-background-grey-darker">
+                        <a href="{{ baseUrl }}/{{ experiment.url }}" class="card has-background-grey-darker">
                             <div class="card-content">
                                 <p class="title has-text-white">{{ experiment.data.title }}</p>
                             </div>
