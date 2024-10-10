@@ -32,16 +32,17 @@ body {
             </div>
             <div id="navbarBasic" class="navbar-menu is-align-items-center">
                 <div class="navbar-end pr-3">
-                    {% assign fullUrl = "/" | concat: baseUrl | concat: "/" %}
-                    <a class="navbar-item mx-1 {% if page.url == fullUrl %}is-active{% endif %}" href="{{ baseUrl }}/" style="padding: 14px; height: 2.4rem !important;">
+                    {% assign fullUrl = baseUrl | append: "/" %}
+                    {{ page.url }} {{fullUrl}}
+                    <a class="navbar-item mx-1 {% if page.url == '/'%}is-active{% endif %}" href="{{ baseUrl }}/" style="padding: 14px; height: 2.4rem !important;">
                         Feed
                     </a>
-                    {% assign fullUrlProfiles = "/" | concat: baseUrl | concat: "/profiles/" %}
-                    <a class="navbar-item mx-1 {% if page.url == fullUrlProfiles %}is-active{% endif %}" href="{{ baseUrl }}/profiles/" style="padding: 14px; height: 2.4rem !important;">
+                    {% assign fullUrlProfiles = baseUrl | append: "/profiles/" %}
+                    <a class="navbar-item mx-1 {% if page.url == '/profiles/'%}is-active{% endif %}" href="{{ baseUrl }}/profiles/" style="padding: 14px; height: 2.4rem !important;">
                         Profiles
                     </a>
-                    {% assign fullUrlAbout = "/" | concat: baseUrl | concat: "/about/" %}
-                    <a class="navbar-item mx-1 {% if page.url == fullUrlAbout %}is-active{% endif %}" href="{{ baseUrl }}/about/" style="padding: 14px; height: 2.4rem !important;">
+                    {% assign fullUrlAbout = baseUrl | append: "/about/" %}
+                    <a class="navbar-item mx-1 {% if page.url == '/about/'%}is-active{% endif %}" href="{{ baseUrl }}/about/" style="padding: 14px; height: 2.4rem !important;">
                         About
                     </a>
                     <a class="navbar-item mx-1 {% if page.url contains '/experiments/' %}is-active{% endif %}" href="{{ baseUrl }}/experiments/" style="padding: 14px; height: 2.4rem !important;">
