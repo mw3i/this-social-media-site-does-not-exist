@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig) {
     let isDev = process.env.ELEVENTY_DEV_MODE === "Y";
 
     // Set up different siteBase URLs for GitHub Pages and local development
-    let repoName = "/this-social-media-site-does-not-exist"; // GitHub repo name
+    let repoName = "this-social-media-site-does-not-exist"; // GitHub repo name
     let baseUrl = isDev ? "" : `/${repoName}`;
 
     // Pass this as global data

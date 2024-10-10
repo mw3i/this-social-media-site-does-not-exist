@@ -19,56 +19,59 @@ body {
 <body data-theme="dark">
     <!-- Header / Navbar -->
     <header>
-        <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/this-social-media-site-does-not-exist/">
-                    <strong>This Social Media Site Doesn't Exist</strong>
+    <nav class="navbar is-dark py-1" role="navigation" aria-label="main navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <strong>This Social Media Site Doesn't Exist</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item mx-1 " href="/">
+                    Feed
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
+                <a class="navbar-item mx-1 is-active" href="/profiles/">
+                    Profiles
+                </a>
+                <a class="navbar-item mx-1 " href="/about/">
+                    About
+                </a>
+                <a class="navbar-item mx-1 " href="/experiments/">
+                   Experiments 
                 </a>
             </div>
-            <div id="navbarBasic" class="navbar-menu is-align-items-center">
-                <div class="navbar-end pr-3">
-                    
-                    <a class="navbar-item mx-1 " href="/this-social-media-site-does-not-exist/" style="padding: 14px; height: 2.4rem !important;">
-                        Feed
-                    </a>
-                    
-                    <a class="navbar-item mx-1 " href="/this-social-media-site-does-not-exist/profiles/" style="padding: 14px; height: 2.4rem !important;">
-                        Profiles
-                    </a>
-                    
-                    <a class="navbar-item mx-1 " href="/this-social-media-site-does-not-exist/about/" style="padding: 14px; height: 2.4rem !important;">
-                        About
-                    </a>
-                    <a class="navbar-item mx-1 " href="/this-social-media-site-does-not-exist/experiments/" style="padding: 14px; height: 2.4rem !important;">
-                        Experiments
-                    </a>
-                </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
         <style>
         /* Custom styles for the active tab */
         .navbar-item {
-            border-radius: 8px !important;
+            border-radius: 12px !important;
         }
 
         .navbar-item.is-active {
             background-color: #00d1b2;
+            /* Bulma's primary color */
             color: white;
+            border-radius: 12px;
+            /* Rounded background */
+/*            padding-left: 10px;*/
+/*            padding-right: 10px;*/
         }
 
         .navbar-item.is-active:hover {
             background-color: #00c4a7;
+            /* Slightly different shade on hover */
         }
         </style>
     </header>
     <!-- Main Content -->
     <main class="section content" style='padding-top: 80px;'>
-        <section class="section">
+            <section class="section">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
             <div class="column is-three-quarters">
@@ -82,7 +85,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Patel</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/0.png" alt="Aarav Patel's profile picture">
+<img class='is-rounded' src="/-/images/0.png" alt="Aarav Patel's profile picture">
 <!-- <img src="" alt="Aarav Patel's profile picture"> -->
 </figure></p>
 <p></div>
@@ -109,7 +112,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élise Dubois</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/1.png" alt="Élise Dubois's profile picture">
+<img class='is-rounded' src="/-/images/1.png" alt="Élise Dubois's profile picture">
 <!-- <img src="" alt="Élise Dubois's profile picture"> -->
 </figure></p>
 <p></div>
@@ -136,7 +139,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Haruto Yamamoto</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/2.png" alt="Haruto Yamamoto's profile picture">
+<img class='is-rounded' src="/-/images/2.png" alt="Haruto Yamamoto's profile picture">
 <!-- <img src="" alt="Haruto Yamamoto's profile picture"> -->
 </figure></p>
 <p></div>
@@ -163,7 +166,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Haruka Takahashi</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/3.png" alt="Haruka Takahashi's profile picture">
+<img class='is-rounded' src="/-/images/3.png" alt="Haruka Takahashi's profile picture">
 <!-- <img src="" alt="Haruka Takahashi's profile picture"> -->
 </figure></p>
 <p></div>
@@ -190,7 +193,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élodie Durand</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/4.png" alt="Élodie Durand's profile picture">
+<img class='is-rounded' src="/-/images/4.png" alt="Élodie Durand's profile picture">
 <!-- <img src="" alt="Élodie Durand's profile picture"> -->
 </figure></p>
 <p></div>
@@ -217,7 +220,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Sharma</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/5.png" alt="Aarav Sharma's profile picture">
+<img class='is-rounded' src="/-/images/5.png" alt="Aarav Sharma's profile picture">
 <!-- <img src="" alt="Aarav Sharma's profile picture"> -->
 </figure></p>
 <p></div>
@@ -244,7 +247,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Haruto Tanaka</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/6.png" alt="Haruto Tanaka's profile picture">
+<img class='is-rounded' src="/-/images/6.png" alt="Haruto Tanaka's profile picture">
 <!-- <img src="" alt="Haruto Tanaka's profile picture"> -->
 </figure></p>
 <p></div>
@@ -271,7 +274,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Priya Kapoor</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/7.png" alt="Priya Kapoor's profile picture">
+<img class='is-rounded' src="/-/images/7.png" alt="Priya Kapoor's profile picture">
 <!-- <img src="" alt="Priya Kapoor's profile picture"> -->
 </figure></p>
 <p></div>
@@ -298,7 +301,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Oliver Harrison</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/8.png" alt="Oliver Harrison's profile picture">
+<img class='is-rounded' src="/-/images/8.png" alt="Oliver Harrison's profile picture">
 <!-- <img src="" alt="Oliver Harrison's profile picture"> -->
 </figure></p>
 <p></div>
@@ -325,7 +328,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Oliver Bennett</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/9.png" alt="Oliver Bennett's profile picture">
+<img class='is-rounded' src="/-/images/9.png" alt="Oliver Bennett's profile picture">
 <!-- <img src="" alt="Oliver Bennett's profile picture"> -->
 </figure></p>
 <p></div>
@@ -352,7 +355,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/10.png" alt="Emily Thompson's profile picture">
+<img class='is-rounded' src="/-/images/10.png" alt="Emily Thompson's profile picture">
 <!-- <img src="" alt="Emily Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -379,7 +382,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Ming Wei</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/11.png" alt="Ming Wei's profile picture">
+<img class='is-rounded' src="/-/images/11.png" alt="Ming Wei's profile picture">
 <!-- <img src="" alt="Ming Wei's profile picture"> -->
 </figure></p>
 <p></div>
@@ -406,7 +409,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lukas Fischer</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/12.png" alt="Lukas Fischer's profile picture">
+<img class='is-rounded' src="/-/images/12.png" alt="Lukas Fischer's profile picture">
 <!-- <img src="" alt="Lukas Fischer's profile picture"> -->
 </figure></p>
 <p></div>
@@ -433,7 +436,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Oliver Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/13.png" alt="Oliver Thompson's profile picture">
+<img class='is-rounded' src="/-/images/13.png" alt="Oliver Thompson's profile picture">
 <!-- <img src="" alt="Oliver Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -460,7 +463,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Min Hao</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/14.png" alt="Min Hao's profile picture">
+<img class='is-rounded' src="/-/images/14.png" alt="Min Hao's profile picture">
 <!-- <img src="" alt="Min Hao's profile picture"> -->
 </figure></p>
 <p></div>
@@ -487,7 +490,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Haruto Takahashi</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/15.png" alt="Haruto Takahashi's profile picture">
+<img class='is-rounded' src="/-/images/15.png" alt="Haruto Takahashi's profile picture">
 <!-- <img src="" alt="Haruto Takahashi's profile picture"> -->
 </figure></p>
 <p></div>
@@ -514,7 +517,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Haruka Tanaka</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/16.png" alt="Haruka Tanaka's profile picture">
+<img class='is-rounded' src="/-/images/16.png" alt="Haruka Tanaka's profile picture">
 <!-- <img src="" alt="Haruka Tanaka's profile picture"> -->
 </figure></p>
 <p></div>
@@ -541,7 +544,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Alex Morgan</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/17.png" alt="Alex Morgan's profile picture">
+<img class='is-rounded' src="/-/images/17.png" alt="Alex Morgan's profile picture">
 <!-- <img src="" alt="Alex Morgan's profile picture"> -->
 </figure></p>
 <p></div>
@@ -568,7 +571,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élise Moreau</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/18.png" alt="Élise Moreau's profile picture">
+<img class='is-rounded' src="/-/images/18.png" alt="Élise Moreau's profile picture">
 <!-- <img src="" alt="Élise Moreau's profile picture"> -->
 </figure></p>
 <p></div>
@@ -595,7 +598,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Patel</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/19.png" alt="Aarav Patel's profile picture">
+<img class='is-rounded' src="/-/images/19.png" alt="Aarav Patel's profile picture">
 <!-- <img src="" alt="Aarav Patel's profile picture"> -->
 </figure></p>
 <p></div>
@@ -622,7 +625,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Mehra</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/20.png" alt="Aarav Mehra's profile picture">
+<img class='is-rounded' src="/-/images/20.png" alt="Aarav Mehra's profile picture">
 <!-- <img src="" alt="Aarav Mehra's profile picture"> -->
 </figure></p>
 <p></div>
@@ -649,7 +652,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lukas Wagner</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/21.png" alt="Lukas Wagner's profile picture">
+<img class='is-rounded' src="/-/images/21.png" alt="Lukas Wagner's profile picture">
 <!-- <img src="" alt="Lukas Wagner's profile picture"> -->
 </figure></p>
 <p></div>
@@ -676,7 +679,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Mei Chen</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/22.png" alt="Mei Chen's profile picture">
+<img class='is-rounded' src="/-/images/22.png" alt="Mei Chen's profile picture">
 <!-- <img src="" alt="Mei Chen's profile picture"> -->
 </figure></p>
 <p></div>
@@ -703,7 +706,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lukas Müller</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/23.png" alt="Lukas Müller's profile picture">
+<img class='is-rounded' src="/-/images/23.png" alt="Lukas Müller's profile picture">
 <!-- <img src="" alt="Lukas Müller's profile picture"> -->
 </figure></p>
 <p></div>
@@ -730,7 +733,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Oliver Bennett</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/24.png" alt="Oliver Bennett's profile picture">
+<img class='is-rounded' src="/-/images/24.png" alt="Oliver Bennett's profile picture">
 <!-- <img src="" alt="Oliver Bennett's profile picture"> -->
 </figure></p>
 <p></div>
@@ -757,7 +760,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Oliver Bennett</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/25.png" alt="Oliver Bennett's profile picture">
+<img class='is-rounded' src="/-/images/25.png" alt="Oliver Bennett's profile picture">
 <!-- <img src="" alt="Oliver Bennett's profile picture"> -->
 </figure></p>
 <p></div>
@@ -784,7 +787,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lena Fischer</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/26.png" alt="Lena Fischer's profile picture">
+<img class='is-rounded' src="/-/images/26.png" alt="Lena Fischer's profile picture">
 <!-- <img src="" alt="Lena Fischer's profile picture"> -->
 </figure></p>
 <p></div>
@@ -811,7 +814,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Amit Chatterjee</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/27.png" alt="Amit Chatterjee's profile picture">
+<img class='is-rounded' src="/-/images/27.png" alt="Amit Chatterjee's profile picture">
 <!-- <img src="" alt="Amit Chatterjee's profile picture"> -->
 </figure></p>
 <p></div>
@@ -838,7 +841,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élise Fournier</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/28.png" alt="Élise Fournier's profile picture">
+<img class='is-rounded' src="/-/images/28.png" alt="Élise Fournier's profile picture">
 <!-- <img src="" alt="Élise Fournier's profile picture"> -->
 </figure></p>
 <p></div>
@@ -865,7 +868,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Wei Zhang</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/29.png" alt="Wei Zhang's profile picture">
+<img class='is-rounded' src="/-/images/29.png" alt="Wei Zhang's profile picture">
 <!-- <img src="" alt="Wei Zhang's profile picture"> -->
 </figure></p>
 <p></div>
@@ -892,7 +895,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Hailey Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/30.png" alt="Hailey Thompson's profile picture">
+<img class='is-rounded' src="/-/images/30.png" alt="Hailey Thompson's profile picture">
 <!-- <img src="" alt="Hailey Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -919,7 +922,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Avery Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/31.png" alt="Avery Thompson's profile picture">
+<img class='is-rounded' src="/-/images/31.png" alt="Avery Thompson's profile picture">
 <!-- <img src="" alt="Avery Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -946,7 +949,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Jessica Miller</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/32.png" alt="Jessica Miller's profile picture">
+<img class='is-rounded' src="/-/images/32.png" alt="Jessica Miller's profile picture">
 <!-- <img src="" alt="Jessica Miller's profile picture"> -->
 </figure></p>
 <p></div>
@@ -973,7 +976,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Luca Romano</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/33.png" alt="Luca Romano's profile picture">
+<img class='is-rounded' src="/-/images/33.png" alt="Luca Romano's profile picture">
 <!-- <img src="" alt="Luca Romano's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1000,7 +1003,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Olivia Bennett</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/34.png" alt="Olivia Bennett's profile picture">
+<img class='is-rounded' src="/-/images/34.png" alt="Olivia Bennett's profile picture">
 <!-- <img src="" alt="Olivia Bennett's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1027,7 +1030,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Ethan Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/35.png" alt="Ethan Thompson's profile picture">
+<img class='is-rounded' src="/-/images/35.png" alt="Ethan Thompson's profile picture">
 <!-- <img src="" alt="Ethan Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1054,7 +1057,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lucas Oliveira</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/36.png" alt="Lucas Oliveira's profile picture">
+<img class='is-rounded' src="/-/images/36.png" alt="Lucas Oliveira's profile picture">
 <!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1081,7 +1084,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Liu Wei</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/37.png" alt="Liu Wei's profile picture">
+<img class='is-rounded' src="/-/images/37.png" alt="Liu Wei's profile picture">
 <!-- <img src="" alt="Liu Wei's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1108,7 +1111,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élodie Moreau</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/38.png" alt="Élodie Moreau's profile picture">
+<img class='is-rounded' src="/-/images/38.png" alt="Élodie Moreau's profile picture">
 <!-- <img src="" alt="Élodie Moreau's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1135,7 +1138,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Ananya Sharma</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/39.png" alt="Ananya Sharma's profile picture">
+<img class='is-rounded' src="/-/images/39.png" alt="Ananya Sharma's profile picture">
 <!-- <img src="" alt="Ananya Sharma's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1162,7 +1165,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Jessica Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/40.png" alt="Jessica Thompson's profile picture">
+<img class='is-rounded' src="/-/images/40.png" alt="Jessica Thompson's profile picture">
 <!-- <img src="" alt="Jessica Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1189,7 +1192,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Sharma</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/41.png" alt="Aarav Sharma's profile picture">
+<img class='is-rounded' src="/-/images/41.png" alt="Aarav Sharma's profile picture">
 <!-- <img src="" alt="Aarav Sharma's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1216,7 +1219,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Clarke</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/42.png" alt="Emily Clarke's profile picture">
+<img class='is-rounded' src="/-/images/42.png" alt="Emily Clarke's profile picture">
 <!-- <img src="" alt="Emily Clarke's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1243,7 +1246,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Mei Zhang</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/43.png" alt="Mei Zhang's profile picture">
+<img class='is-rounded' src="/-/images/43.png" alt="Mei Zhang's profile picture">
 <!-- <img src="" alt="Mei Zhang's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1270,7 +1273,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Jackson Tremblay</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/44.png" alt="Jackson Tremblay's profile picture">
+<img class='is-rounded' src="/-/images/44.png" alt="Jackson Tremblay's profile picture">
 <!-- <img src="" alt="Jackson Tremblay's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1297,7 +1300,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élodie Dubois</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/45.png" alt="Élodie Dubois's profile picture">
+<img class='is-rounded' src="/-/images/45.png" alt="Élodie Dubois's profile picture">
 <!-- <img src="" alt="Élodie Dubois's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1324,7 +1327,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Mehta</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/46.png" alt="Aarav Mehta's profile picture">
+<img class='is-rounded' src="/-/images/46.png" alt="Aarav Mehta's profile picture">
 <!-- <img src="" alt="Aarav Mehta's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1351,7 +1354,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Avery Johnson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/47.png" alt="Avery Johnson's profile picture">
+<img class='is-rounded' src="/-/images/47.png" alt="Avery Johnson's profile picture">
 <!-- <img src="" alt="Avery Johnson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1378,7 +1381,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lucas Oliveira</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/48.png" alt="Lucas Oliveira's profile picture">
+<img class='is-rounded' src="/-/images/48.png" alt="Lucas Oliveira's profile picture">
 <!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1405,7 +1408,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Riku Tanaka</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/49.png" alt="Riku Tanaka's profile picture">
+<img class='is-rounded' src="/-/images/49.png" alt="Riku Tanaka's profile picture">
 <!-- <img src="" alt="Riku Tanaka's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1432,7 +1435,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Luca Bianchi</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/50.png" alt="Luca Bianchi's profile picture">
+<img class='is-rounded' src="/-/images/50.png" alt="Luca Bianchi's profile picture">
 <!-- <img src="" alt="Luca Bianchi's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1459,7 +1462,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Charlotte Davies</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/51.png" alt="Charlotte Davies's profile picture">
+<img class='is-rounded' src="/-/images/51.png" alt="Charlotte Davies's profile picture">
 <!-- <img src="" alt="Charlotte Davies's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1486,7 +1489,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Mei Lin</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/52.png" alt="Mei Lin's profile picture">
+<img class='is-rounded' src="/-/images/52.png" alt="Mei Lin's profile picture">
 <!-- <img src="" alt="Mei Lin's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1513,7 +1516,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Kapoor</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/53.png" alt="Aarav Kapoor's profile picture">
+<img class='is-rounded' src="/-/images/53.png" alt="Aarav Kapoor's profile picture">
 <!-- <img src="" alt="Aarav Kapoor's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1540,7 +1543,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Li Wei</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/54.png" alt="Li Wei's profile picture">
+<img class='is-rounded' src="/-/images/54.png" alt="Li Wei's profile picture">
 <!-- <img src="" alt="Li Wei's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1567,7 +1570,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lena Fischer</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/55.png" alt="Lena Fischer's profile picture">
+<img class='is-rounded' src="/-/images/55.png" alt="Lena Fischer's profile picture">
 <!-- <img src="" alt="Lena Fischer's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1594,7 +1597,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Liam Johnson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/56.png" alt="Liam Johnson's profile picture">
+<img class='is-rounded' src="/-/images/56.png" alt="Liam Johnson's profile picture">
 <!-- <img src="" alt="Liam Johnson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1621,7 +1624,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Brandon McAllister</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/57.png" alt="Brandon McAllister's profile picture">
+<img class='is-rounded' src="/-/images/57.png" alt="Brandon McAllister's profile picture">
 <!-- <img src="" alt="Brandon McAllister's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1648,7 +1651,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lucas Oliveira</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/58.png" alt="Lucas Oliveira's profile picture">
+<img class='is-rounded' src="/-/images/58.png" alt="Lucas Oliveira's profile picture">
 <!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1675,7 +1678,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Luca Bianchi</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/59.png" alt="Luca Bianchi's profile picture">
+<img class='is-rounded' src="/-/images/59.png" alt="Luca Bianchi's profile picture">
 <!-- <img src="" alt="Luca Bianchi's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1702,7 +1705,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/60.png" alt="Emily Thompson's profile picture">
+<img class='is-rounded' src="/-/images/60.png" alt="Emily Thompson's profile picture">
 <!-- <img src="" alt="Emily Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1729,7 +1732,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Oliver Bennett</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/61.png" alt="Oliver Bennett's profile picture">
+<img class='is-rounded' src="/-/images/61.png" alt="Oliver Bennett's profile picture">
 <!-- <img src="" alt="Oliver Bennett's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1756,7 +1759,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Liam Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/62.png" alt="Liam Thompson's profile picture">
+<img class='is-rounded' src="/-/images/62.png" alt="Liam Thompson's profile picture">
 <!-- <img src="" alt="Liam Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1783,7 +1786,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Johnson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/63.png" alt="Emily Johnson's profile picture">
+<img class='is-rounded' src="/-/images/63.png" alt="Emily Johnson's profile picture">
 <!-- <img src="" alt="Emily Johnson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1810,7 +1813,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lina Schneider</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/64.png" alt="Lina Schneider's profile picture">
+<img class='is-rounded' src="/-/images/64.png" alt="Lina Schneider's profile picture">
 <!-- <img src="" alt="Lina Schneider's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1837,7 +1840,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Marco Bianchi</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/65.png" alt="Marco Bianchi's profile picture">
+<img class='is-rounded' src="/-/images/65.png" alt="Marco Bianchi's profile picture">
 <!-- <img src="" alt="Marco Bianchi's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1864,7 +1867,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lucas Oliveira</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/66.png" alt="Lucas Oliveira's profile picture">
+<img class='is-rounded' src="/-/images/66.png" alt="Lucas Oliveira's profile picture">
 <!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1891,7 +1894,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Brianna McKenzie</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/67.png" alt="Brianna McKenzie's profile picture">
+<img class='is-rounded' src="/-/images/67.png" alt="Brianna McKenzie's profile picture">
 <!-- <img src="" alt="Brianna McKenzie's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1918,7 +1921,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Mei Wong</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/68.png" alt="Mei Wong's profile picture">
+<img class='is-rounded' src="/-/images/68.png" alt="Mei Wong's profile picture">
 <!-- <img src="" alt="Mei Wong's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1945,7 +1948,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Luca Bianchi</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/69.png" alt="Luca Bianchi's profile picture">
+<img class='is-rounded' src="/-/images/69.png" alt="Luca Bianchi's profile picture">
 <!-- <img src="" alt="Luca Bianchi's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1972,7 +1975,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lena Fischer</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/70.png" alt="Lena Fischer's profile picture">
+<img class='is-rounded' src="/-/images/70.png" alt="Lena Fischer's profile picture">
 <!-- <img src="" alt="Lena Fischer's profile picture"> -->
 </figure></p>
 <p></div>
@@ -1999,7 +2002,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Jordan Mitchell</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/71.png" alt="Jordan Mitchell's profile picture">
+<img class='is-rounded' src="/-/images/71.png" alt="Jordan Mitchell's profile picture">
 <!-- <img src="" alt="Jordan Mitchell's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2026,7 +2029,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lena Schneider</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/72.png" alt="Lena Schneider's profile picture">
+<img class='is-rounded' src="/-/images/72.png" alt="Lena Schneider's profile picture">
 <!-- <img src="" alt="Lena Schneider's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2053,7 +2056,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Olivia Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/73.png" alt="Olivia Thompson's profile picture">
+<img class='is-rounded' src="/-/images/73.png" alt="Olivia Thompson's profile picture">
 <!-- <img src="" alt="Olivia Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2080,7 +2083,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lucas Almeida</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/74.png" alt="Lucas Almeida's profile picture">
+<img class='is-rounded' src="/-/images/74.png" alt="Lucas Almeida's profile picture">
 <!-- <img src="" alt="Lucas Almeida's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2107,7 +2110,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Aarav Sharma</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/75.png" alt="Aarav Sharma's profile picture">
+<img class='is-rounded' src="/-/images/75.png" alt="Aarav Sharma's profile picture">
 <!-- <img src="" alt="Aarav Sharma's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2134,7 +2137,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élodie Dubois</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/76.png" alt="Élodie Dubois's profile picture">
+<img class='is-rounded' src="/-/images/76.png" alt="Élodie Dubois's profile picture">
 <!-- <img src="" alt="Élodie Dubois's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2161,7 +2164,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/77.png" alt="Emily Thompson's profile picture">
+<img class='is-rounded' src="/-/images/77.png" alt="Emily Thompson's profile picture">
 <!-- <img src="" alt="Emily Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2188,7 +2191,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lukas Schmidt</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/78.png" alt="Lukas Schmidt's profile picture">
+<img class='is-rounded' src="/-/images/78.png" alt="Lukas Schmidt's profile picture">
 <!-- <img src="" alt="Lukas Schmidt's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2215,7 +2218,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Johnson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/79.png" alt="Emily Johnson's profile picture">
+<img class='is-rounded' src="/-/images/79.png" alt="Emily Johnson's profile picture">
 <!-- <img src="" alt="Emily Johnson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2242,7 +2245,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Élodie Dubois</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/80.png" alt="Élodie Dubois's profile picture">
+<img class='is-rounded' src="/-/images/80.png" alt="Élodie Dubois's profile picture">
 <!-- <img src="" alt="Élodie Dubois's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2269,7 +2272,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Ananya Sharma</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/81.png" alt="Ananya Sharma's profile picture">
+<img class='is-rounded' src="/-/images/81.png" alt="Ananya Sharma's profile picture">
 <!-- <img src="" alt="Ananya Sharma's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2296,7 +2299,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Megan Walker</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/82.png" alt="Megan Walker's profile picture">
+<img class='is-rounded' src="/-/images/82.png" alt="Megan Walker's profile picture">
 <!-- <img src="" alt="Megan Walker's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2323,7 +2326,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Marco Rossi</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/83.png" alt="Marco Rossi's profile picture">
+<img class='is-rounded' src="/-/images/83.png" alt="Marco Rossi's profile picture">
 <!-- <img src="" alt="Marco Rossi's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2350,7 +2353,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Jessica Thompson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/84.png" alt="Jessica Thompson's profile picture">
+<img class='is-rounded' src="/-/images/84.png" alt="Jessica Thompson's profile picture">
 <!-- <img src="" alt="Jessica Thompson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2377,7 +2380,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lucas Oliveira</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/85.png" alt="Lucas Oliveira's profile picture">
+<img class='is-rounded' src="/-/images/85.png" alt="Lucas Oliveira's profile picture">
 <!-- <img src="" alt="Lucas Oliveira's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2404,7 +2407,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lena Schneider</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/86.png" alt="Lena Schneider's profile picture">
+<img class='is-rounded' src="/-/images/86.png" alt="Lena Schneider's profile picture">
 <!-- <img src="" alt="Lena Schneider's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2431,7 +2434,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lukas Schneider</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/87.png" alt="Lukas Schneider's profile picture">
+<img class='is-rounded' src="/-/images/87.png" alt="Lukas Schneider's profile picture">
 <!-- <img src="" alt="Lukas Schneider's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2458,7 +2461,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Marlene Fischer</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/88.png" alt="Marlene Fischer's profile picture">
+<img class='is-rounded' src="/-/images/88.png" alt="Marlene Fischer's profile picture">
 <!-- <img src="" alt="Marlene Fischer's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2485,7 +2488,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Mei Zhang</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/89.png" alt="Mei Zhang's profile picture">
+<img class='is-rounded' src="/-/images/89.png" alt="Mei Zhang's profile picture">
 <!-- <img src="" alt="Mei Zhang's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2512,7 +2515,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Bennett</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/90.png" alt="Emily Bennett's profile picture">
+<img class='is-rounded' src="/-/images/90.png" alt="Emily Bennett's profile picture">
 <!-- <img src="" alt="Emily Bennett's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2539,7 +2542,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Haruto Nakamura</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/91.png" alt="Haruto Nakamura's profile picture">
+<img class='is-rounded' src="/-/images/91.png" alt="Haruto Nakamura's profile picture">
 <!-- <img src="" alt="Haruto Nakamura's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2566,7 +2569,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Finn Becker</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/92.png" alt="Finn Becker's profile picture">
+<img class='is-rounded' src="/-/images/92.png" alt="Finn Becker's profile picture">
 <!-- <img src="" alt="Finn Becker's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2593,7 +2596,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Oliver Bennett</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/93.png" alt="Oliver Bennett's profile picture">
+<img class='is-rounded' src="/-/images/93.png" alt="Oliver Bennett's profile picture">
 <!-- <img src="" alt="Oliver Bennett's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2620,7 +2623,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Johnson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/94.png" alt="Emily Johnson's profile picture">
+<img class='is-rounded' src="/-/images/94.png" alt="Emily Johnson's profile picture">
 <!-- <img src="" alt="Emily Johnson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2647,7 +2650,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Tyler McKenzie</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/95.png" alt="Tyler McKenzie's profile picture">
+<img class='is-rounded' src="/-/images/95.png" alt="Tyler McKenzie's profile picture">
 <!-- <img src="" alt="Tyler McKenzie's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2674,7 +2677,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Lucas Ferreira</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/96.png" alt="Lucas Ferreira's profile picture">
+<img class='is-rounded' src="/-/images/96.png" alt="Lucas Ferreira's profile picture">
 <!-- <img src="" alt="Lucas Ferreira's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2701,7 +2704,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Emily Johnson</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/97.png" alt="Emily Johnson's profile picture">
+<img class='is-rounded' src="/-/images/97.png" alt="Emily Johnson's profile picture">
 <!-- <img src="" alt="Emily Johnson's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2728,7 +2731,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Giulia Ricci</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/98.png" alt="Giulia Ricci's profile picture">
+<img class='is-rounded' src="/-/images/98.png" alt="Giulia Ricci's profile picture">
 <!-- <img src="" alt="Giulia Ricci's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2755,7 +2758,7 @@ body {
 <div class="column is-one-third">
 <h3 class="title is-4">Hiroshi Tanaka</h3></p>
 <p><figure class="image is-128x128">
-<img class='is-rounded' src="/this-social-media-site-does-not-exist/-/images/99.png" alt="Hiroshi Tanaka's profile picture">
+<img class='is-rounded' src="/-/images/99.png" alt="Hiroshi Tanaka's profile picture">
 <!-- <img src="" alt="Hiroshi Tanaka's profile picture"> -->
 </figure></p>
 <p></div>
@@ -2805,13 +2808,5 @@ body {
     });
     </script>
 </body>
-<style>
-.media {
-    transition: background-color 0.3s ease; /* Smooth transition of background color */
-    padding: 14px;
-    border-radius: 6px;
-}
-.media:hover {
-    background-color: rgba(0,0,0,.2); /* Change background color on hover */
-}
+
 </html>
