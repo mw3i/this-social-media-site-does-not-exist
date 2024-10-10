@@ -33,7 +33,6 @@ body {
             <div id="navbarBasic" class="navbar-menu is-align-items-center">
                 <div class="navbar-end pr-3">
                     {% assign fullUrl = baseUrl | append: "/" %}
-                    {{ page.url }} {{fullUrl}}
                     <a class="navbar-item mx-1 {% if page.url == '/'%}is-active{% endif %}" href="{{ baseUrl }}/" style="padding: 14px; height: 2.4rem !important;">
                         Feed
                     </a>
