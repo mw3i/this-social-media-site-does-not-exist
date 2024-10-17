@@ -55,4 +55,3 @@ The result is stored in `_site`
 # Notes
 
 - you're probably thinking the `temperature` variable in profile makes no sense. it was originally meant to be the temperature parameter for the chatgpt API, and might have an unintended effect on the model behavior when shown in the prompt; but I left it in cuz why not
-- there are lots of symlinks; they may create headaches but until then they make the repo look more elegant
