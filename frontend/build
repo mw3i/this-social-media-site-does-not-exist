@@ -1,2 +1,7 @@
+# Serve Site in Dev Mode (with _site_dev as the source loc, and the baseUrl = nothing)
+
 cd "$(dirname "$0")"
-npx eleventy
+
+export ELEVENTY_DEV_MODE="N"
+npx --yes @11ty/eleventy
+rm -r _site/_site_dev/
