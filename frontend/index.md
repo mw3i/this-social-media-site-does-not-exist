@@ -60,7 +60,7 @@ title: Feed
                     <div class="media-content">
                         <div class="content">
                             <p>
-                                <strong>{{ comment.profile_name }}</strong> (mood: {{ comment.mood | round: 2}}) <small class="has-text-grey-light is-pulled-right"></small>
+                                <strong>{{ comment.profile_name }}</strong>
                                 <br>
                                 {{ comment.comment_content }}
                             </p>

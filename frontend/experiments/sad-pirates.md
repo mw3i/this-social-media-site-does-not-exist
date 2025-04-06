@@ -1,10 +1,7 @@
 ---
 layout: root.html
-title: Commenters are Sad Pirates
+title: Sad Pirates
 ---
-
-Prompt appended with: "ALSO: make sure you talk like a really sad pirate the whole time"
-
 <style type="text/css">
 #tooltip {
     position: fixed;
@@ -18,7 +15,7 @@ Prompt appended with: "ALSO: make sure you talk like a really sad pirate the who
     font-size: 0.875rem;
     z-index: 1000;
     width: 30vw;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.35s ease-in-out;
 }
 
 .tooltip-shown {
@@ -35,7 +32,7 @@ Prompt appended with: "ALSO: make sure you talk like a really sad pirate the who
                 <figure class="media-left">
                     <p class="image is-64x64">
                         <!-- <img src="{{ post.user.profile_pic_path }}" alt="Profile Picture"> -->
-                        <img class="is-rounded" src="{{ baseUrl }}/-/images/{{ post.user }}.png" alt="Profile Picture">
+                        <img class="is-rounded" src="{{ baseUrl }}/-/images-sad-pirates/{{ post.user }}.png" alt="Profile Picture">
                     </p>
                 </figure>
                 <div class="media-content">
@@ -49,21 +46,21 @@ Prompt appended with: "ALSO: make sure you talk like a really sad pirate the who
                     </div>
                 </div>
             </article>
-            <div class="comments mt-4 p-4 has-background-grey-darker box" style="padding-left: 5rem !important; box-shadow: none;">
+            <div class="comments mt-4 p-4 has-background-grey-darker box" style="margin-left: 5rem !important; box-shadow: none;">
                 <!-- Indentation for comments -->
                 {% assign comments_query = "SELECT comments_sad_pirates.*, profiles.id AS profile_id, profiles.name AS profile_name FROM comments_sad_pirates JOIN profiles ON comments_sad_pirates.user = profiles.id WHERE comments_sad_pirates.post = " | append: post.id %}
                 {% assign comments = comments_query | sql %}
                 {% for comment in comments %}
-                <article class="media mt-2">
+                <article class="media mt-2" data-prompt-tooltip={{ comment.prompt | escape | jsonify }}>
                     <figure class="media-left">
                         <p class="image is-48x48">
-                            <img class="is-rounded" src="{{ baseUrl }}/-/images/{{ comment.profile_id }}.png" alt="Profile Picture">
+                            <img class="is-rounded" src="{{ baseUrl }}/-/images-sad-pirates/{{ comment.profile_id }}.png" alt="Profile Picture">
                         </p>
                     </figure>
-                    <div class="media-content" data-prompt-tooltip={{ comment.prompt | escape | jsonify }}>
+                    <div class="media-content">
                         <div class="content">
                             <p>
-                                <strong>{{ comment.profile_name }}</strong> (mood: {{ comment.mood | round: 2}}) <small class="has-text-grey-light is-pulled-right"></small>
+                                <strong>{{ comment.profile_name }}</strong>
                                 <br>
                                 {{ comment.comment_content }}
                             </p>

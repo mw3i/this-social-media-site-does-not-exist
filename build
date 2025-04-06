@@ -1,2 +1,5 @@
-source env
-frontend/build
+cd "$(dirname "$0")"
+
+echo "Building..."
+podman build -t the-app -f .podman/Containerfile .
+echo "Done."

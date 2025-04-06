@@ -32,9 +32,8 @@ title: Profiles
                                     <div class="column is-flex is-align-items-center">
                                         <div>
                                             <p><strong>Nationality:</strong> {{ profile.nationality }}</p>
-                                            <p><strong>Political Ideology Leaning:</strong> {{ profile.political_ideology_leaning | round: 2 }}</p>
                                             <p><strong>Interests:</strong> {{ profile.interests | join: ", " }}</p>
-                                            <!-- <p><strong>Mood:</strong> {{ profile.mood }}</p> -->
+                                            <p><strong>Mood:</strong> {{ profile.mood }}</p>
                                             <p><strong>Personality Type:</strong> {{ profile.personality_type }}</p>
                                         </div>
                                     </div>

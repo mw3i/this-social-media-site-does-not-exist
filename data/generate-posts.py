@@ -23,24 +23,17 @@ def generate_posts(n=1):
 
     # Declare post attributes in a single dictionary
     posts = {
-    'post_type': np.random.choice(
-        [
-            "humor", "personal reflection", "recommendations", 
-            "random thoughts", "reflection on current events", 
-            "news", "political opinion", "motivation/inspiration"
-        ], size=n
-    ),
-        'news_category': np.random.choice(
-            ["World", "Politics", "Technology", "Health", 
-             "Science", "Business", "Entertainment", "Sports",
-             "Education", "Environment", "Culture"], size=n
-        ),
-        'personal_category': np.random.choice(
-            ["accomplishment", "something that happened", 
-             "reflection", "travel experience", "funny story"], size=n
+        'post_type': np.random.choice(
+            [
+                "humor", "personal reflection", "recommendations", 
+                "random thoughts", "reflection on current events", 
+                "news event", "political opinion", "motivation/inspiration", 
+                "funny story", "travel experience", "accomplishment",
+                "sports",
+            ], size=n
         ),
         'suggest_post_length': np.random.choice(
-            [1, 2, 3, 4], size=n, p=[0.1, 0.4, 0.4, 0.1]  # Setting weights for selection
+            [1, 2, 3], size=n, p=[0.35, 0.55, 0.1]  # Setting weights for selection
         ),
     }
 
@@ -55,25 +48,30 @@ def generate_posts(n=1):
     posts['user'] = np.random.choice(users.to_dict(orient='records'), size=n)
 
     post_prompt = """
-    You are a user. Your name is {user[name]}. Here are your characteristics:
+    You are a user. Your name is {name}. Here are your characteristics:
 
-    Temperature: {user[temperature]}
-    Nationality: {user[nationality]}
-    Political Ideology Leaning: {user[political_ideology_leaning]}
-    Interests: {user[interests]}
-    Mood: {user[mood]}
-    Personality Type: {user[personality_type]}
+    Nationality: {nationality}
+    Interests: {interests}
+    Mood: {mood}
+    Personality Type: {personality_type}
 
     Write a tweet-like post with the following characteristics:
 
-    Post Type: {post[post_type]}
-    Suggested Post Length (in sentences: {post[suggest_post_length]}
+    Post Type: {post_type}
+    Suggested Post Length (in sentences): {suggest_post_length}
 
     Return your answer as just the text of your post. 
     """
 
     # Create the prompt for each post
-    posts['prompt'] = posts.apply(lambda row: post_prompt.format(user=row['user'], post=row), axis=1)
+    posts['prompt'] = posts.apply(
+        lambda row: post_prompt.format(
+            post_type = row['post_type'], 
+            suggest_post_length = row['suggest_post_length'], 
+            **row['user']
+        ), 
+        axis = 1,
+    )
     # print(posts['prompt'].loc[0]); exit()
     
     posts['post-content'] = posts.apply(lambda row: llm(row['prompt']), axis=1)

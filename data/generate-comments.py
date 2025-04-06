@@ -36,43 +36,57 @@ def generate_comments(n=1):
     comments = {
         'user': sampled_users,
         'post': sampled_posts,
-        'mood': moods,
         'comment_content': [None] * n  # Placeholder for comments
     }
 
     comments = pd.DataFrame(comments)
     comments['id'] = range(comments.shape[0])
 
+    # comments['poster'] = comments.apply(lambda row: row['post'], axis = 1)
+    comments['poster'] = comments.apply(lambda row: users[users['id'] == row['post']['user']].iloc[0].to_dict(), axis = 1)
+
     post_prompt = """
-    You are a user. Your name is {user[name]}. Here are your characteristics:
+    You are a user on a social media site. Your name is {name}. Here are your characteristics:
 
-    Temperature: {user[temperature]}
-    Nationality: {user[nationality]}
-    Political Ideology Leaning: {user[political_ideology_leaning]}
-    Interests: {user[interests]}
-    Your Personal Mood: {user[mood]}
-    Personality Type: {user[personality_type]}
+    Nationality: {nationality}
+    Interests: {interests}
+    Your Personal Mood: {mood}
+    Personality Type: {personality_type}
 
-    You scrolled and found a post: {post[post-content]}
+    You scrolled and found a post: 
+    ```
+    {post_content}
+    ```
 
-    Mood intensity ranges from -1.0 (less intense) to 1.0 (more intense). Your current mood intensity is: [{mood}]. Respond accordingly.
+    The person who made this post is: 
 
-    The person who made this post is: {user}. Consider how they align with your personality when you make your response.
+        name: {poster_name}
+        interests: {poster_interests}
+        personality_type: {poster_personality_type}
 
-    Return your answer as just the text of your comment.
+    Consider how they align with your personality when you make your response.
+
+    Return your answer as just the text of your comment. 1-2 sentences, 3 if needed
     """
-
     # Create the prompt for each comment
-    comments['prompt'] = comments.apply(lambda row: post_prompt.format(user=row['user'], post=row['post'], mood=row['mood']), axis=1)
+
+    comments['prompt'] = comments.apply(
+        lambda row: post_prompt.format(
+            post_content = row['post']['post-content'],
+            poster_name = row['poster']['name'],
+            poster_interests = row['poster']['interests'],
+            poster_personality_type = row['poster']['personality_type'],
+            **row['user'],
+        ), 
+        axis=1
+    )
 
     comments['comment_content'] = comments.apply(lambda row: llm(row['prompt']), axis=1)
-
     comments['user'] = comments['user'].apply(lambda user: user['id'])
     comments['post'] = comments['post'].apply(lambda post: post['id'])
 
     # Add a random date ranging from today to 6 months ago
     comments['date'] = pd.to_datetime(np.random.choice(pd.date_range(datetime.datetime.now() - datetime.timedelta(days=180), datetime.datetime.now()), size=n))
-
 
     # Return the comments DataFrame as a list of dictionaries
     return comments
@@ -81,6 +95,8 @@ def generate_comments(n=1):
 if __name__ == "__main__":
     number_of_comments = os.environ.get('NUM_COMMENTS', 100)
     comments = generate_comments(number_of_comments)
+    
+    comments['poster'] = comments['poster'].apply(lambda x: json.dumps(x))
     
     # build sqlite3 connection to path `./db.sqlite` with pythons sqlite module
     conn = sqlite3.connect('./db.sqlite')

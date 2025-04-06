@@ -21,14 +21,11 @@ def generate_profiles(n):
 
     # Declare user attributes in a single dictionary
     users = {
-        'temperature': np.random.normal(0, 1, n),  # n samples from a normal distribution
         'nationality': [
             random.choice([
-                "United States", "China", "Japan", "Germany", "India", 
-                "United Kingdom", "France", "Italy", "Brazil", "Canada"
+                "United States"
             ]) for _ in range(n)
         ],
-        'political_ideology_leaning': np.random.uniform(0, 1, n),  # Random values between 0 and 1
         'interests': [
             random.sample([
                 "sports", "politics", "gardening", "reading", "traveling",
@@ -57,15 +54,38 @@ def generate_profiles(n):
     }
     users = pd.DataFrame(users)
 
+    # Reformat interests
+    users['interests'] = users['interests'].apply(lambda x: ', '.join(x))
+
     # Add an 'id' column with a range of values starting from 1
     users['id'] = range(users.shape[0])
 
     # Prompt for generating a random name
-    name_prompt = '''Generate a random first and last name for a social media user based on their nationality: {user[nationality]}. return answer as just the string<<first name, last name>> (but leave out the << and >> obviously)'''
-    users['name'] = users.apply(lambda row: llm(name_prompt.format(user = row)), axis = 1)
+    name_prompt = '''
+    Generate a random English first and last name for a social media user.
+
+    Their information:
+
+    Nationality: {nationality}
+    Personality Type: {personality_type}
+    Interests: {interests}
+
+    Return answer as a simple string formatted: first name, last name
+    '''
+
+    def getname(row):
+        # Format interests into a clean string
+        prompt = name_prompt.format(**row.to_dict())
+        res = llm(prompt)
+        print('built', row['id'], 'w/', prompt, '\nres:', res)
+        return res
+
+    users['name'] = users.apply(lambda row: getname(row), axis = 1)
+
+    # users['name'] = users.apply(lambda row: llm(name_prompt.format(user = row), temp = 2), axis = 1)
+    # users['name'] = users.apply(lambda row: name_prompt.format(user = row), axis = 1)
 
     # Prompt for generating a profile image
-    image_prompt = "Generate a profile image for a social media user."
     users['profile_pic_path'] = ''
 
     # json cols

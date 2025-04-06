@@ -37,20 +37,24 @@ if __name__ == "__main__":
         'the person is doing one of the activities they are interested in',
         'it\'s just a picture of the persons face',
     ]
-
     for profile in profiles:
         print(profile['name'], profile['id'])
+
         if os.path.exists(f"{imgdir}/{profile['id']}.png"):
             print('img already exists')
+
         else:
 
-            prompt = f"""A realistic, real social media profile picture for this person: 
+            prompt = f"""Generate a realistic (as if taken by a real camera) looking social media profile picture for this person: 
 
-            {profile}
+            name: {profile['name']}
+            nationality: {profile['nationality']}
+            interests: {profile['interests']}
+            mood: {profile['mood']}
+            personality_type: {profile['personality_type']}
 
             where: {random.choice(img_options)}
             """
-
             try:
                 # Generate image using dalle function from ai module
                 image_url = dalle(prompt)
@@ -61,7 +65,7 @@ if __name__ == "__main__":
                 print(f"Saved image successfully")
             
             except Exception as e:
-                print(f"Failed to generate or save image")
+                 print(f"Failed to generate or save image; failed with: {e}")
 
 
     # Close the database connection

@@ -1,0 +1,117 @@
+---
+layout: root.html
+title: Really Angry
+---
+<style type="text/css">
+#tooltip {
+    position: fixed;
+    top: 40px;
+    bottom: 40px;
+    left: -35vw;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    border-radius: 14px;
+    font-size: 0.875rem;
+    z-index: 1000;
+    width: 30vw;
+    transition: transform 0.35s ease-in-out;
+}
+
+.tooltip-shown {
+    transform: translateX(37vw);
+}
+</style>
+<section class="section">
+    <div class="container is-max-tablet">
+        <h1 class="title">Feed</h1>
+        {% assign posts = "SELECT posts_angry.*, profiles.name AS profile_name FROM posts_angry JOIN profiles ON posts_angry.user = profiles.id" | sql %}
+        {% for post in posts %}
+        <div class="my-6 box content has-background-black-ter" style='box-shadow: none !important;'>
+            <article class="media" data-prompt-tooltip={{ post.prompt | escape | jsonify }}>
+                <figure class="media-left">
+                    <p class="image is-64x64">
+                        <!-- <img src="{{ post.user.profile_pic_path }}" alt="Profile Picture"> -->
+                        <img class="is-rounded" src="{{ baseUrl }}/-/images-angry/{{ post.user }}.png" alt="Profile Picture">
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>{{ post.profile_name }}</strong> <small class="is-pulled-right has-text-grey-light">{{ post.date | date: '%B %d, %Y' }}</small>
+                            <br>
+                            {{ post['post-content'] }}
+                            <!-- Make sure to use 'post_content' to display the text -->
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <div class="comments mt-4 p-4 has-background-grey-darker box" style="margin-left: 5rem !important; box-shadow: none;">
+                <!-- Indentation for comments -->
+                {% assign comments_query = "SELECT comments_angry.*, profiles.id AS profile_id, profiles.name AS profile_name FROM comments_angry JOIN profiles ON comments_angry.user = profiles.id WHERE comments_angry.post = " | append: post.id %}
+                {% assign comments = comments_query | sql %}
+                {% for comment in comments %}
+                <article class="media mt-2" data-prompt-tooltip={{ comment.prompt | escape | jsonify }}>
+                    <figure class="media-left">
+                        <p class="image is-48x48">
+                            <img class="is-rounded" src="{{ baseUrl }}/-/images-angry/{{ comment.profile_id }}.png" alt="Profile Picture">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong>{{ comment.profile_name }}</strong>
+                                <br>
+                                {{ comment.comment_content }}
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+        <hr>
+        {% endfor %}
+    </div>
+</section>
+<div id='tooltip'>
+</div>
+
+<script type="text/javascript">
+const tooltip = document.querySelector('#tooltip');
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all elements with the data-prompt-tooltip attribute
+    const tooltipElements = document.querySelectorAll('[data-prompt-tooltip]');
+
+    tooltipElements.forEach(function(el) {
+
+        el.addEventListener('click', function(event) {
+            // Prevent click from bubbling up if the element is clicked
+            event.stopPropagation();
+
+            // Check if tooltip is already shown
+            if (tooltip.classList.contains('tooltip-shown')) {
+                // Hide the tooltip if it is already visible
+                tooltip.classList.remove('tooltip-shown');
+            } else {
+                // Set tooltip content and show it
+                tooltip.innerHTML = `PROMPT: <br><br>${el.getAttribute('data-prompt-tooltip')}`;
+                tooltip.classList.add('tooltip-shown');
+            }
+        });
+
+        // // Show the tooltip on mouse enter
+        // el.addEventListener('mouseenter', function() {
+        //     tooltip.innerHTML = `PROMPT: <br><br>${el.getAttribute('data-prompt-tooltip')}`; // Set tooltip text
+
+        //     // Add the class to show the tooltip (slide-in effect)
+        //     tooltip.classList.add('tooltip-shown');
+        // });
+
+        // // Hide the tooltip on mouse leave
+        // el.addEventListener('mouseleave', function() {
+        //     tooltip.classList.remove('tooltip-shown'); // Remove the class to hide the tooltip
+        // });
+    });
+});
+</script>
